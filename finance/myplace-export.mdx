@@ -1,0 +1,59 @@
+---
+title: "myPlace export (PRODA)"
+description: "How to generate a PRODA CSV export and submit NDIS claims for NDIA-managed participants via the myPlace portal."
+icon: "download"
+---
+
+For NDIA-managed participants, you claim directly from the NDIA by uploading a bulk payment request (PRODA file) to the NDIA's myPlace portal. CoordHub generates this file for you.
+
+## What is PRODA?
+
+PRODA (Provider Digital Access) is the NDIA's identity verification system. The **myPlace portal** is where registered NDIS providers submit bulk payment requests. You log in to myPlace using your PRODA credentials, not your CoordHub login.
+
+## Before you start
+
+Your organisation's NDIS registration number must be entered in CoordHub before you can generate a PRODA export. If it's missing, go to **Settings → Organisation** and add it. CoordHub will block the export if this field is empty.
+
+## Generating the PRODA CSV
+
+<Steps>
+  <Step title="Go to Finance → PRODA Export">
+    Click **Finance** in the sidebar, then **PRODA Export**.
+  </Step>
+  <Step title="Select the activities to include">
+    CoordHub shows all approved, NDIA-managed activities that haven't been submitted yet. Each row shows the participant name, date, support item, and amount.
+
+    Tick the activities you want to include in this export, or click **Select All**.
+  </Step>
+  <Step title="Generate the export">
+    Click **Generate Export**. CoordHub creates the PRODA-formatted CSV file and records the export in your claims history.
+  </Step>
+  <Step title="Download the CSV">
+    Click **Download CSV** to save the file to your computer. The filename includes the date and time of the export.
+  </Step>
+</Steps>
+
+## Submitting to the NDIA myPlace portal
+
+<Steps>
+  <Step title="Log in to myPlace">
+    Go to [my.gov.au](https://my.gov.au) and log in with your myGov credentials, then access the myPlace portal for providers.
+  </Step>
+  <Step title="Navigate to Payment Requests">
+    In myPlace, go to **Payment Requests → Bulk Payment Request**.
+  </Step>
+  <Step title="Upload the CSV">
+    Upload the PRODA CSV file you downloaded from CoordHub. myPlace validates the file and shows a summary of the claims.
+  </Step>
+  <Step title="Submit the payment request">
+    Review the summary and submit. The NDIA processes payment requests and transfers funds to your registered bank account, typically within 3 business days.
+  </Step>
+</Steps>
+
+<Warning>
+  The PRODA CSV submission step happens outside CoordHub — in the NDIA myPlace portal. CoordHub records that the export was generated, but it can't confirm that you've uploaded it to myPlace or that the NDIA has processed it. You'll need to check myPlace for the payment status.
+</Warning>
+
+<Tip>
+  After NDIA payment is received, record it in CoordHub under Finance → Payments so your payment reconciliation stays up to date.
+</Tip>

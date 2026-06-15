@@ -1,0 +1,47 @@
+---
+title: "Claims history"
+description: "How to view and track submitted NDIS claims in CoordHub."
+icon: "receipt"
+---
+
+The Claims tab in Finance shows all NDIS claims that have been generated and submitted, organised by participant and date. It's your audit trail of what's been lodged with the NDIA.
+
+## Accessing claims history
+
+Go to **Finance** in the sidebar and click **Claims**.
+
+## What you'll see
+
+Each claim row shows:
+
+| Field | What it means |
+|---|---|
+| **Participant** | The participant the claim is for |
+| **Date** | The date the activity was delivered (not the submission date) |
+| **Support item** | The NDIS line item code and name |
+| **Amount** | The dollar amount of the claim |
+| **Claim type** | The NDIS claim category (see below) |
+| **Export** | Which PRODA export this claim was included in |
+| **Status** | Submitted, paid, or rejected |
+
+## Claim types
+
+CoordHub applies the correct NDIS claim type automatically based on the activity type and any cancellation reason:
+
+| Claim type | When it applies |
+|---|---|
+| **Standard** | Regular billable support coordination activity |
+| **CancellationNoShow** | Participant did not attend without any notice |
+| **CancellationWithin2Days** | Cancellation with less than 2 clear business days notice |
+| **REPAYMENT** | Used for write-offs or adjustments |
+
+## Filtering claims
+
+Use the filters at the top of the Claims page to narrow the view:
+- By **participant** — see all claims for one person
+- By **date range** — useful for reconciling a specific payment run
+- By **status** — find any rejected claims that need to be resubmitted
+
+<Info>
+  If a claim is rejected by the NDIA in myPlace, it won't automatically update in CoordHub — you'll need to check myPlace directly and then manually note the rejection in CoordHub.
+</Info>

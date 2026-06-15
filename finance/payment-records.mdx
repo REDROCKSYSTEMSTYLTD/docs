@@ -1,0 +1,48 @@
+---
+title: "Payment records"
+description: "How to record payments received and use NDIA payment runs to reconcile bank transfers."
+icon: "money-bill-wave"
+---
+
+Once a payment is received — from a plan manager, or from the NDIA via bank transfer — record it in CoordHub to keep your accounts reconciled.
+
+## Recording a payment manually
+
+<Steps>
+  <Step title="Open the invoice">
+    Go to **Finance → Invoices** and find the invoice you've been paid for. Open the invoice detail page.
+  </Step>
+  <Step title="Click Record Payment">
+    Click **Record Payment** on the invoice detail page.
+  </Step>
+  <Step title="Enter the payment details">
+    Fill in:
+    - **Payment date** — the date the funds arrived in your account
+    - **Amount received** — the amount paid (may differ from the invoice total if there are rounding adjustments)
+    - **Payment method** — bank transfer, cheque, etc.
+    - **Reference** (optional) — any payment reference number from your bank statement
+  </Step>
+  <Step title="Save">
+    Click **Save**. The invoice status updates to **Paid** and the payment is recorded in the audit trail.
+  </Step>
+</Steps>
+
+## NDIA payment runs
+
+When the NDIA pays a batch of PRODA claims by bank EFT, CoordHub groups these into a **payment run** — a single record representing the NDIA's payment for multiple claims.
+
+Go to **Finance → Payments** to see payment runs. Each run shows:
+- The EFT reference number from the NDIA
+- The total amount paid
+- The individual claims included in the payment
+- Reconciliation status (matched or unmatched)
+
+CoordHub attempts to match NDIA payment runs to the claims in your export history automatically. If a payment run can't be matched automatically, it appears as unmatched — review it and link it manually.
+
+## Xero sync
+
+If your organisation has Xero connected, invoices created in CoordHub sync to Xero automatically. Payments recorded in Xero flow back to CoordHub to update the invoice status. If you see a sync lag, check the Xero connection status under Settings → Integrations.
+
+<Tip>
+  The Finance overview KPI cards show live reconciliation status. "NDIA Reconciled" counts claims where an NDIA payment run has been matched and confirmed — a useful check that your PRODA submissions are being processed.
+</Tip>
