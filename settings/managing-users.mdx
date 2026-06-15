@@ -1,0 +1,83 @@
+---
+title: "Managing users"
+description: "How to invite staff, manage roles, and deactivate accounts in CoordHub."
+icon: "users"
+---
+
+CoordHub has two staff roles: **Coordinator** and **Admin**. The organisation **Owner** is a special admin-level role assigned to the account that created the organisation — there can only be one owner.
+
+## Role comparison
+
+| Permission | Coordinator | Admin | Owner |
+|---|---|---|---|
+| View own participants and activities | ✅ | ✅ | ✅ |
+| View all participants (org-wide) | ❌ | ✅ | ✅ |
+| Log and submit activities | ✅ | ✅ | ✅ |
+| Approve activities | ❌ | ✅ | ✅ |
+| Create and send invoices | ❌ | ✅ | ✅ |
+| Generate PRODA exports | ❌ | ✅ | ✅ |
+| Add and exit participants | ❌ | ✅ | ✅ |
+| Access Reports section | ❌ | ✅ | ✅ |
+| Manage Settings | ❌ | ✅ | ✅ |
+| Invite and deactivate staff | ❌ | ✅ | ✅ |
+| Return approved activities to draft | ❌ | ✅ | ✅ |
+
+## Inviting a staff member
+
+<Steps>
+  <Step title="Go to Settings → Team">
+    Click **Settings** in the sidebar, then **Team**.
+  </Step>
+  <Step title="Click Invite Staff Member">
+    Click **Invite Staff Member** in the top-right corner.
+  </Step>
+  <Step title="Enter details and assign a role">
+    Enter the staff member's email address and select their role (Coordinator or Admin). Click **Send Invitation**.
+  </Step>
+  <Step title="Staff member accepts the invitation">
+    They'll receive an email from `no-reply@coordhub.au` with an **Accept Invitation** link. Invitation links expire after 48 hours — if they miss the window, you can resend from the Team page.
+  </Step>
+</Steps>
+
+## Assigning caseload
+
+After a coordinator accepts their invitation, assign participants to their caseload:
+
+1. Open a participant profile
+2. Go to the **Overview** tab
+3. Find the **Assigned Coordinator** field and select the staff member
+
+Participants can only be assigned to one coordinator at a time. Admins can view all participants regardless of assignment.
+
+## Deactivating an account
+
+When a staff member leaves your organisation, deactivate their account rather than deleting it. Deactivation preserves all their historical activity records — if you deleted the account, those records would become unattributed.
+
+<Steps>
+  <Step title="Go to Settings → Team">
+    Find the staff member in the team list.
+  </Step>
+  <Step title="Click Deactivate">
+    Click the **⋮** menu on their row and select **Deactivate Account**. Confirm when prompted.
+  </Step>
+</Steps>
+
+The staff member can no longer log in. Their name still appears on historical activity records, service agreements, and audit logs — the data is preserved exactly as it was.
+
+<Warning>
+  Deactivating an account is reversible — you can reactivate it from the same menu. Deleting an account is permanent and is not available in the UI. Contact CoordHub support if you need to delete an account.
+</Warning>
+
+## Resetting a team member's password
+
+Staff manage their own passwords via the login page (**Forgot password?** link). If a coordinator is locked out:
+
+1. Go to **Settings → Team**
+2. Find the staff member
+3. Click **⋮ → Send Password Reset**
+
+They'll receive a password reset email at their registered address. The link expires after 1 hour.
+
+<Info>
+  MFA can be reset from **Settings → Team → ⋮ → Reset MFA**. Only use this if the staff member has lost access to both their authenticator app and their backup codes — it's a privileged action.
+</Info>
