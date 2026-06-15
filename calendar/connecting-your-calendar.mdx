@@ -37,3 +37,20 @@ To disconnect, go to your Profile → Microsoft 365 → **Disconnect**. This sto
 <Info>
   The M365 integration requires your organisation to have a Microsoft 365 Business subscription and an administrator who can register apps in Azure Active Directory. Contact your IT team or CoordHub support if you need help with the organisational setup.
 </Info>
+
+## Troubleshooting M365 connection issues
+
+<AccordionGroup>
+  <Accordion title="I clicked 'Connect Microsoft 365' but nothing happened">
+    This usually means a browser pop-up blocker prevented the Microsoft authentication window from opening. Allow pop-ups from `app.coordhub.au` in your browser settings, then try again. In Chrome: click the pop-up blocked icon in the address bar → Allow. In Edge: Settings → Cookies and site permissions → Pop-ups and redirects → add `app.coordhub.au`.
+  </Accordion>
+  <Accordion title="I authorised the connection but activities aren't appearing in Outlook">
+    After connecting, new activities you log will create calendar events — but existing activities don't retroactively sync. Log a new test activity and check Outlook 1–2 minutes later. If it doesn't appear, check the connection status under Profile → Microsoft 365. If the connection shows as Disconnected, reconnect. If it shows as Connected but events still don't sync, contact your IT administrator — there may be a permission issue with the Azure AD app registration.
+  </Accordion>
+  <Accordion title="The connection is working but I can see participant names in shared calendars">
+    The M365 integration only puts minimal information in calendar events by design — it should show the activity type, not the participant's full name. If you're seeing more participant detail than expected in a shared calendar, go to Profile → Microsoft 365 and check the Privacy Level setting. Set it to **Minimal** to reduce the information included in calendar events.
+  </Accordion>
+  <Accordion title="I'm getting a permission error when trying to connect">
+    This usually means your organisation's Azure AD settings don't allow the CoordHub app. Your IT administrator needs to grant admin consent for the CoordHub app in Azure Active Directory. Ask them to go to Azure Portal → App registrations → Enterprise applications → find CoordHub → Grant admin consent. Share the [Connecting your calendar](/calendar/connecting-your-calendar) guide with your IT team.
+  </Accordion>
+</AccordionGroup>
