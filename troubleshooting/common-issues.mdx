@@ -1,0 +1,85 @@
+---
+title: "Common issues"
+description: "Solutions to the most common issues coordinators encounter in CoordHub."
+icon: "life-ring"
+---
+
+<AccordionGroup>
+  <Accordion title="An activity I submitted isn't showing in the approval queue">
+    **Check the activity status.** Go to **Activities** in the sidebar and find the activity. If the status is still **Draft**, it hasn't been submitted yet — open the activity and click **Submit for Approval**.
+
+    **Check the participant status.** If the participant's status was changed to **On hold** or **Exited** after you logged the activity, some workflows may prevent the activity from moving through approval. Contact your administrator.
+
+    **Check which queue your manager is looking at.** Managers see the pending queue filtered to their own organisation by default. If your organisation has multiple sites or teams, confirm that your manager is looking at the right filter.
+  </Accordion>
+
+  <Accordion title="My PRODA CSV export is empty">
+    PRODA exports only include activities that meet all of the following criteria:
+    1. The activity status is **Approved** (not Draft or Pending)
+    2. The activity has not already been included in a previous PRODA export
+    3. The budget management type for the activity is **NDIA-managed** (not plan-managed or self-managed)
+    4. The activity date falls within the participant's active plan period
+
+    **Check your date range filter.** Go to **Finance → PRODA Export** and make sure the date range you've set covers the period you're looking for.
+
+    **Check the budget management type.** If a participant's budget is plan-managed, their activities will appear in the invoice flow, not the PRODA export. Go to the participant's Plans tab, open the plan, and check the management type on each budget.
+
+    **Check if activities are already exported.** Activities included in a previous PRODA export are marked as **Submitted** and won't appear again. Go to **Finance → Claims** to see previously submitted claims.
+  </Accordion>
+
+  <Accordion title="I can't log in / MFA isn't working">
+    **Check your authenticator app's time sync.** TOTP codes (the 6-digit codes from authenticator apps) are time-sensitive. If your phone's clock is wrong by more than 30 seconds, the code will be invalid. On iPhone, go to Settings → General → Date & Time → Set Automatically. On Android, go to Settings → General Management → Date and Time → Automatic Date and Time.
+
+    **Use a backup code.** If your authenticator app is unavailable, use one of the backup codes you saved when you set up MFA. Each backup code is single-use. On the MFA screen, click **Use a backup code** and enter one of the codes from your saved list.
+
+    **Contact your administrator.** If you've lost access to both your authenticator app and your backup codes, your administrator can reset your MFA from **Settings → Team → ⋮ → Reset MFA**. Once reset, you'll be prompted to set up MFA again on your next login.
+  </Accordion>
+
+  <Accordion title="A participant's budget shows 0% used but I've logged activities">
+    Budget utilisation only includes activities in **Approved** status or higher. Activities in **Draft** or **Pending** status are not counted.
+
+    **Check the activity status.** Go to the participant's **Activities** tab and look at the status column. If activities are still Pending, they need to be approved by a manager before the budget will update.
+
+    **Check the support item.** If you selected a non-billable activity type instead of an NDIS support item, the activity won't draw from the plan budget. Open the activity and check the **Support Item** field.
+
+    **Check the plan dates.** If the activity date falls outside the plan period (before the plan start date or after the plan end date), it won't be counted against that plan's budget. Check the plan dates on the participant's Plans tab.
+  </Accordion>
+
+  <Accordion title="I can't see another coordinator's participants">
+    CoordHub's default access model is: **Coordinators see only their own assigned caseload.** If a participant isn't assigned to you, they won't appear in your participant list.
+
+    **If you need temporary access** — ask an administrator to add you as a secondary coordinator on that participant's record, or to grant you temporary admin access.
+
+    **If you're being assigned their caseload** — the administrator needs to update the **Assigned Coordinator** field on each participant's Overview tab.
+
+    **If you're an administrator** — make sure you haven't applied a caseload filter. Check the participant list view and clear any coordinator filter at the top.
+  </Accordion>
+
+  <Accordion title="An invoice was rejected by myPlace">
+    myPlace (the NDIA portal) rejects bulk payment requests for specific reasons. Common causes:
+
+    | Rejection reason | How to fix |
+    |---|---|
+    | **ABN mismatch** | The ABN in the PRODA file doesn't match the ABN registered against your PRODA account. Go to Settings → Organisation and check the ABN matches your PRODA registration exactly. |
+    | **Support item not in plan** | The line item you billed is not an approved support in the participant's NDIS plan. Check the participant's plan at the NDIA portal and confirm the support item is funded. |
+    | **Date outside plan period** | The activity date is before the plan start date or after the plan end date. Check the plan dates on the participant's Plans tab in CoordHub. |
+    | **Provider not linked to participant** | For some claim types, the NDIA requires the provider to be linked to the participant in myPlace. Check the participant's provider link in the NDIA portal. |
+    | **Duplicate claim** | The same activity has been submitted twice. Check Claims History in CoordHub to find any previously submitted claims for the same date and support item. |
+
+    After fixing the underlying issue, generate a new PRODA export for the rejected activities and resubmit.
+  </Accordion>
+
+  <Accordion title="The budget forecast looks wrong">
+    **Understand how burn rate is calculated.** The burn rate is the weekly average spend weighted by the remaining plan period. It uses only **Approved, Invoiced, and Submitted** activities — activities in Draft or Pending are excluded. If there's a large queue of unsubmitted activities, the burn rate will look lower than the real spending rate.
+
+    **Check the Unsubmitted column.** The forecast table has an **Unsubmitted** column showing approved activities not yet included in an invoice. If this number is large, include it in your assessment — it represents spend that's been incurred but not yet billed.
+
+    **For PACE participants.** PACE funding periods may have different lengths than the standard 12-month plan cycle. The forecast uses the PACE period dates rather than a calendar year, which can make burn rates look different from non-PACE participants. A **†** footnote on the table indicates PACE data is included.
+
+    **If the wrong plan is showing.** CoordHub uses the active plan for the forecast. If a participant has had a plan renewal, confirm the new plan is marked as Active on the participant's Plans tab and the old plan has been superseded.
+  </Accordion>
+</AccordionGroup>
+
+<Info>
+  If your issue isn't listed here, contact CoordHub support at [support@coordhub.au](mailto:support@coordhub.au). Include your organisation name, the participant or record you were working with, and a description of what you tried and what happened.
+</Info>
