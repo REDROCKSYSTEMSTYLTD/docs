@@ -1,0 +1,33 @@
+---
+title: "Exporting data"
+description: "How to export data from CoordHub as CSV for use in Excel or other tools."
+icon: "download"
+---
+
+Most data in CoordHub can be exported as a CSV file — useful for bulk analysis, sharing with your accountant, or building your own reports in Excel.
+
+## Where to find export options
+
+Export buttons appear on most list views in CoordHub — look for a **Download CSV** or **Export** button in the top-right corner of the page. Exports are available on:
+
+- Participant list
+- Activity list
+- Invoice list
+- Claims list
+- Budget forecast table
+- All four register pages (also available as PDF)
+
+## What's included in exports
+
+CSV exports include all columns visible on the page you're on, plus a few additional fields (like record IDs and full date-times) that aren't shown in the UI.
+
+## CSV format notes
+
+- Files are encoded in UTF-8 with BOM — Excel opens these correctly without needing to specify encoding
+- Dates are in DD/MM/YYYY format
+- Currency amounts are in dollars (not cents)
+- Dollar amounts are sanitised to prevent formula injection if opened in Excel
+
+<Tip>
+  If you're building a recurring report in Excel, use the same filter settings each time you export — the column order and field names are consistent between exports, so your Excel formulas won't break.
+</Tip>

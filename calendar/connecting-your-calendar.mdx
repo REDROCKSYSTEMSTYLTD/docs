@@ -1,0 +1,39 @@
+---
+title: "Connecting your calendar"
+description: "How to connect CoordHub to Microsoft 365 / Outlook for calendar integration."
+icon: "plug"
+---
+
+CoordHub integrates with Microsoft 365 (Outlook) to sync activities between CoordHub and your Outlook calendar.
+
+## What syncs
+
+When the integration is active:
+- Activities you log in CoordHub create calendar events in your Outlook calendar
+- The calendar event includes the participant name, activity type, and case note summary
+
+Activity details are kept minimal in the calendar event to protect participant privacy in shared or team calendar environments.
+
+## Setting up the integration
+
+The M365 integration is set up at the organisation level by an administrator, then individual coordinators connect their own Outlook account.
+
+**Administrator setup (Settings → Integrations → Microsoft 365):**
+1. Your IT administrator or CoordHub administrator registers the CoordHub app in your organisation's Azure Active Directory
+2. They provide CoordHub with the required App ID and tenant credentials
+3. CoordHub establishes the M365 connection for the organisation
+
+**Individual coordinator connection:**
+1. Go to your **Profile** (top-right corner → Profile)
+2. Click **Connect Microsoft 365**
+3. Sign in with your Outlook/Microsoft account
+4. Approve the permissions CoordHub requests (calendar read/write)
+5. Your calendar is now connected
+
+## Disconnecting
+
+To disconnect, go to your Profile → Microsoft 365 → **Disconnect**. This stops new activities from creating calendar events. Existing events in your Outlook calendar are not removed.
+
+<Info>
+  The M365 integration requires your organisation to have a Microsoft 365 Business subscription and an administrator who can register apps in Azure Active Directory. Contact your IT team or CoordHub support if you need help with the organisational setup.
+</Info>
