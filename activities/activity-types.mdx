@@ -1,0 +1,45 @@
+---
+title: "Activity types"
+description: "Understanding support categories, NDIS line items, and the difference between billable and non-billable activities."
+icon: "tags"
+---
+
+## NDIS support categories
+
+CoordHub aligns to the NDIS support catalogue. When you log a billable activity, you select a support item — CoordHub uses this to determine which budget category the charge draws from and what ClaimType to apply when you export to PRODA.
+
+The most common support items for Support Coordinators are:
+
+| Support Item | Code | Category |
+|---|---|---|
+| Support Coordination | 07_002_0106_8 | Support Coordination (07) |
+| Specialist Support Coordination | 07_004_0132_8 | Support Coordination (07) |
+| Psychosocial Recovery Coaching | 07_006_0128_8 | Support Coordination (07) |
+
+Your organisation's administrator configures which support items are available to select in the activity form under Settings → Activities.
+
+## Billable vs. non-billable
+
+**Billable activities** draw from the participant's NDIS plan budget. When approved, they become available for invoicing and PRODA claims.
+
+**Non-billable activities** are tracked but not charged. Common non-billable types include:
+- Internal team meetings
+- Administrative work not claimable under the NDIS
+- Activity logged in error (before it's approved)
+
+Your administrator creates and manages non-billable activity types under Settings → Activities.
+
+## Cancellation types
+
+If you need to cancel an activity, CoordHub captures the NDIS cancellation reason so the correct claim type is applied to the PRODA export:
+
+| Reason | NDIS claim type |
+|---|---|
+| Cancelled with adequate notice | No claim |
+| Short notice cancellation (within 2 business days) | CancellationWithin2Days |
+| No show — participant | CancellationNoShow |
+| No show — provider | No claim |
+
+<Info>
+  NDIS cancellation rules and claim types are set by the NDIS Price Guide. CoordHub derives the correct claim type automatically based on the cancellation reason you select and the notice period.
+</Info>
