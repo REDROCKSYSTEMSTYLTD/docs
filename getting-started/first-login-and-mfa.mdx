@@ -51,3 +51,19 @@ After your first successful MFA login, you land on your dashboard. MFA is now ac
 <Tip>
   Use your password manager to store your CoordHub backup codes alongside your password — they're only useful if you can find them when you need them.
 </Tip>
+
+<AccordionGroup>
+  <Accordion title="Common questions">
+    **What if I lose access to my authenticator app?**
+    Use one of the backup codes you saved when you set up MFA. On the MFA screen at login, click **Use a backup code** and enter one of your single-use codes. If you've used all your backup codes and lost your authenticator app, contact your administrator — they can reset your MFA from **Settings → Team → ⋮ → Reset MFA**.
+
+    **Can I use SMS instead of an authenticator app?**
+    No — CoordHub requires a TOTP authenticator app (Google Authenticator, Microsoft Authenticator, Authy, or similar). SMS-based MFA is not supported because SMS codes can be intercepted. An authenticator app is significantly more secure and works even when you have no mobile signal.
+
+    **Can I set up MFA on multiple devices?**
+    Yes — scan the QR code with multiple devices during setup. Each device will generate valid TOTP codes. If you later need to add a device after the initial setup, contact your administrator to trigger a fresh MFA setup for your account.
+
+    **What are the backup codes for?**
+    Backup codes are emergency one-time-use codes that let you log in if your phone is unavailable (lost, stolen, dead battery). Each code can only be used once. Store them somewhere secure — a password manager is ideal. If you've used all your backup codes, log in with a regular MFA code and regenerate them from your Profile → Security settings.
+  </Accordion>
+</AccordionGroup>
