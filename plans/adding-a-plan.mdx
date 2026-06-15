@@ -25,11 +25,24 @@ Have the participant's NDIS plan document ready. You'll need the plan start and 
   </Step>
   <Step title="Set the plan management type">
     Select how the plan is managed overall:
-    - **NDIA-managed** — claims go directly to the NDIA via PRODA
-    - **Plan-managed** — invoices go to the plan manager, who pays the NDIA claims
-    - **Self-managed** — participant manages their own funds (rare for SC budgets)
 
-    This can be overridden at the individual budget level if different categories are managed differently.
+    <Tabs>
+      <Tab title="NDIA-managed">
+        Claims go directly to the NDIA via PRODA. Your organisation invoices the NDIA using the bulk payment request (PRODA CSV) exported from CoordHub and uploaded to the myPlace portal. Payment comes directly from the NDIA to your bank account.
+
+        This is the most common management type for Support Coordination budgets.
+      </Tab>
+      <Tab title="Plan-managed">
+        Invoices go to the participant's plan manager (a third-party NDIS registered organisation). The plan manager pays your invoice and then claims reimbursement from the NDIA. You are not responsible for PRODA submissions for plan-managed participants — the plan manager handles that.
+
+        If the participant has a plan manager, you'll need to enter the plan manager's details under Finance → Plan Managers before adding this plan, or link them when setting up the budget.
+      </Tab>
+      <Tab title="Self-managed">
+        The participant receives their NDIS funds directly and pays providers themselves. Rare for Support Coordination budgets — most Support Coordination is NDIA-managed or plan-managed. If a participant is self-managed for their SC budget, they'll pay your invoices directly.
+      </Tab>
+    </Tabs>
+
+    This can be overridden at the individual budget level if different categories within the same plan have different management types.
   </Step>
   <Step title="Add support budgets">
     For each support category in the participant's plan, click **Add Budget**. Enter:
@@ -45,8 +58,21 @@ Have the participant's NDIS plan document ready. You'll need the plan start and 
 
 ## What happens next
 
-Budget tracking starts immediately. Approved activities will draw from the correct budget category based on their support item code. Go to **Plans → Tracking Spend** to see how utilisation is calculated.
+Budget tracking starts immediately. Approved activities will draw from the correct budget category based on their support item code. Go to [Tracking spend](/plans/tracking-spend) to see how utilisation is calculated.
 
 <Warning>
   Adding a new plan supersedes any existing active plan for this participant. The superseded plan becomes historical and is no longer available for new activities or invoices. Make sure all billing for the old plan is finalised before adding a new one.
 </Warning>
+
+<AccordionGroup>
+  <Accordion title="Common questions">
+    **What if the participant has a plan manager for some budgets but not others?**
+    This is common — a participant might have their Support Coordination budget as NDIA-managed but their Core Supports as plan-managed. Set the plan-level management type to the most common type, then override the management type on individual budgets that are different. CoordHub routes invoices and PRODA exports correctly based on the budget-level management type.
+
+    **The plan document shows a total amount — how do I split it into categories?**
+    The participant's plan document (available from myGov or provided by the NDIA planner) should list each support category separately with individual dollar amounts. If only a total is shown, ask the participant for the plan schedule or contact their LAC or NDIA planner for a breakdown.
+
+    **Can I edit a plan after it's been saved?**
+    Yes — open the plan from the participant's Plans tab and click **Edit Plan**. You can update allocated amounts, dates, and management types. Changes affect budget utilisation calculations from the time of the change — they don't retroactively alter historical records.
+  </Accordion>
+</AccordionGroup>

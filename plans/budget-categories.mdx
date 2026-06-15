@@ -8,22 +8,25 @@ icon: "layer-group"
 
 CoordHub uses the standard NDIS support category structure. Each budget you add to a plan is assigned to one category. The category determines which NDIS line items (support items) can be billed against it.
 
-The categories most commonly used in support coordination are:
-
-| Category | Number | Common use |
-|---|---|---|
-| Daily Activities | 01 | Core supports — personal care, community access |
-| Social & Community Participation | 04 | Recreation, social activities |
-| Support Coordination | 07 | Support coordination and specialist SC |
-| Improved Living Arrangements | 08 | SIL-related coordination |
-| Increased Social & Community Participation | 09 | Skills development, education support |
-| Finding & Keeping a Job | 10 | Employment-related support |
-| Improved Health & Wellbeing | 11 | Allied health supports |
-| Improved Learning | 12 | Education-related supports |
-| Improved Life Choices | 13 | Plan management |
-| Improved Daily Living | 15 | Therapy supports |
+| Category | Number | Reg Group | Common services |
+|---|---|---|---|
+| Daily Activities | 01 | 0107, 0115, 0120 | Personal care, community access, domestic assistance |
+| Social & Community Participation | 04 | 0125 | Recreation programs, social activities, group outings |
+| Support Coordination | 07 | 0106 | Support coordination, plan implementation, crisis support (SC) |
+| Support Coordination | 07 | 0132 | Specialist Support Coordination (for participants with complex needs) |
+| Improved Living Arrangements | 08 | 0131 | SIL coordination, housing search, tenancy support |
+| Increased Social & Community Participation | 09 | 0116 | Skills development, education support, employment readiness |
+| Finding & Keeping a Job | 10 | 0102 | Employment assistance, job search support, workplace modifications |
+| Improved Health & Wellbeing | 11 | 0126 | Exercise physiology, dietetics, personal training |
+| Improved Learning | 12 | 0117 | Educational support, tutoring, school transition planning |
+| Improved Life Choices | 13 | 0106 | Plan management (financial intermediary services) |
+| Improved Daily Living | 15 | 0128 | Occupational therapy, speech pathology, psychology, physiotherapy |
 
 Your participants will typically only have budgets in the categories their plan funds — CoordHub only shows relevant categories when logging activities.
+
+<Info>
+  Support Coordination (Category 07) is the most common category for Support Coordinators. Registration group 0106 covers standard Support Coordination; registration group 0132 covers Specialist Support Coordination. If your organisation delivers both, your administrator will configure both support items under Settings → Activities.
+</Info>
 
 ## Management types
 
@@ -40,3 +43,16 @@ The budget-level management type takes precedence over the plan-level setting. T
 <Info>
   When you create an invoice, CoordHub routes it correctly based on the management type of the budget the activity drew from. NDIA-managed activities go into the PRODA export; plan-managed activities go into a regular invoice to the plan manager.
 </Info>
+
+<AccordionGroup>
+  <Accordion title="Common questions">
+    **Can I add a budget category that isn't in the participant's plan?**
+    Yes — CoordHub doesn't validate budget categories against the NDIA's records. But adding a budget category that isn't in the participant's actual plan means any activities billed to it will be rejected by the NDIA in myPlace. Only add categories that match the participant's current NDIS plan.
+
+    **What if a participant's plan has a combined Category 01/04 budget?**
+    Some NDIS plans have a combined Core budget instead of separate category allocations. In CoordHub, enter this as a combined budget rather than splitting it artificially. Check how the NDIA has structured it in the plan document — the plan schedule should show whether categories are combined or separate.
+
+    **What does "Reg Group" mean?**
+    Registration Group (Reg Group) is the NDIS classification code for the type of support. Your organisation must be registered under the relevant registration group to bill activities in that category. Check your NDIS registration certificate for the list of registration groups you're approved for.
+  </Accordion>
+</AccordionGroup>

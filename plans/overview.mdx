@@ -22,12 +22,12 @@ Activities you log are matched to a support budget by their support item code. C
 
 CoordHub calculates a **plan health** status for each plan based on the rate of spend against the funding remaining and time left in the plan period:
 
-| Health | Meaning |
-|---|---|
-| 🟢 **On track** | Spend is proportional to the time elapsed — no action needed |
-| 🟡 **Monitor** | Spend is running slightly ahead or behind — worth watching |
-| 🟠 **At risk** | Spend rate suggests the budget will run out before the plan ends, or there will be significant underspend |
-| 🔴 **Critical** | Budget is overspent, or spend rate is severely out of range |
+| Health | Threshold | Meaning |
+|---|---|---|
+| 🟢 **On track** | Spend rate within expected range | Spend is proportional to time elapsed — no action needed |
+| 🟡 **Monitor** | ×1.10 overspend ratio | Spend is running slightly ahead — worth watching but not urgent |
+| 🟠 **At risk** | ×1.25 overspend ratio | Spend rate suggests the budget will run out before the plan ends, or there will be significant underspend. Discuss with the participant. |
+| 🔴 **Critical** | Budget overspent, or ×0.75 underspend | Budget is overspent (NDIA may reject claims), or spend is so far below expected that significant underspend is certain. Action required. |
 
 Plan health shows on the participant's Plans tab and is summarised in the Budget Forecasting table across all participants.
 
@@ -36,5 +36,18 @@ Plan health shows on the participant's Plans tab and is summarised in the Budget
 CoordHub supports both standard NDIS plans and PACE (Planning and Assessment Connected Experience) plans. PACE plans use funding periods instead of annual plan cycles. When a participant is on PACE, their plan health calculations use the PACE funding period dates rather than the plan start/end dates.
 
 <Tip>
-  When a new NDIS plan is added for a participant who already has a plan, CoordHub automatically supersedes the old plan — you don't need to manually close it.
+  When a new NDIS plan is added for a participant who already has a plan, CoordHub automatically supersedes the old plan — you don't need to manually close it. Make sure all billing for the old plan is finalised before adding a new one.
 </Tip>
+
+<AccordionGroup>
+  <Accordion title="Common questions">
+    **What happens when a plan expires?**
+    When a plan's end date passes, it moves to historical status. No new activities can be billed against it. If a new plan has been set up, activities from that date forward bill to the new plan automatically based on the plan dates. If there's a gap between plans (the new plan hasn't been entered in CoordHub yet), activities logged during the gap can't be billed until the new plan is added.
+
+    **Can a participant have two active plans at once?**
+    No — CoordHub only allows one active plan per participant at a time. When you add a new plan, the previous one is superseded. This matches how the NDIS works: a participant has one current plan, and a previous plan that may still have claims processing.
+
+    **How does the plan health calculation handle PACE vs standard plans?**
+    Standard plans use the plan start and end date for health calculations. PACE plans use the PACE funding period dates. Both calculate health the same way — spend rate vs. time remaining. A participant who's six months into a twelve-month plan and has spent 60% of their budget would show as 🟡 Monitor (slightly ahead but not critical).
+  </Accordion>
+</AccordionGroup>

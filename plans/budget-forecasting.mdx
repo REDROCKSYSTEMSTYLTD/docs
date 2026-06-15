@@ -49,3 +49,27 @@ A note at the bottom of the table shows a count of participants excluded from th
 <Tip>
   The forecast updates whenever you load the page. For a weekly review, export to CSV and share with your team — the export includes a timestamp so everyone knows what data they're looking at.
 </Tip>
+
+## Worked example
+
+**Participant:** Jemma has a 12-month NDIS plan running from 01/07/2025 to 30/06/2026.
+- Category 07 (Support Coordination): $8,000
+- Category 15 (Improved Daily Living — OT): $5,000
+
+**Situation at 15/01/2026 (6.5 months into the plan):**
+- Category 07: $5,200 Approved + Invoiced, $2,800 Remaining. 65% used with 46% of plan period remaining.
+- Category 15: $1,200 spent, $3,800 Remaining. 24% used with 46% remaining.
+
+**How CoordHub calculates the forecast:**
+
+For Category 07: $5,200 spent over 6.5 months = $800/month burn rate. With 5.5 months remaining and $2,800 left, the forecast projects $800 × 5.5 = $4,400 additional spend — meaning the category would overspend by $1,600 at current rate. Plan health: 🔴 Critical.
+
+For Category 15: $1,200 spent over 6.5 months = $185/month burn rate. With 5.5 months remaining and $3,800 left, the forecast projects $185 × 5.5 = $1,018 additional spend — leaving $2,782 unspent at the current rate. Plan health: 🔴 Critical (severe underspend risk).
+
+**What this means in practice:**
+- Category 07 needs to be managed down — perhaps fewer activities per month, or a discussion about whether a plan review is warranted.
+- Category 15 has significant underspend risk — worth discussing with the participant and their OT provider to increase sessions if the participant needs more support.
+
+<Info>
+  The forecast table updates every time you load the page. For a formal month-end review, use **Export CSV** to save a timestamped snapshot.
+</Info>

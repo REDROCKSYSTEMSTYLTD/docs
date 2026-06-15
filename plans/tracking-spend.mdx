@@ -38,3 +38,31 @@ The utilisation view also shows **unsubmitted activities** — activities that h
 <Tip>
   If a participant is showing as on track but has a large volume of unsubmitted activities, include those in your utilisation review — they'll become billed spend once invoiced.
 </Tip>
+
+## Reading the utilisation accordion
+
+When you click on a plan budget row to expand it, the accordion shows a breakdown of spend by activity status:
+
+| Column | What it means |
+|---|---|
+| **Allocated** | The total dollar amount in the NDIS plan for this category — set when you added the plan |
+| **Approved** | Activities that have been approved by a manager but not yet included in an invoice. This represents work done but not yet formally billed. |
+| **Invoiced** | Activities included in a sent invoice, but not yet confirmed as a PRODA submission or plan manager payment |
+| **Submitted** | NDIA-managed: PRODA claims that have been exported and uploaded to myPlace. Plan-managed: invoices sent to the plan manager. |
+| **Remaining** | Allocated minus the sum of Approved + Invoiced + Submitted. This is the spendable budget left. |
+| **% Used** | Total spend (all statuses) as a percentage of Allocated |
+
+**A note on "Remaining":** The Remaining column is conservative — it deducts Approved activities even though they haven't been invoiced yet. This means the Remaining figure may be lower than what's actually been paid to you. This is intentional: it prevents coordinators from accidentally overbilling a budget by not counting pending work.
+
+<AccordionGroup>
+  <Accordion title="Common questions">
+    **Why does the Remaining amount look lower than I expected?**
+    Remaining deducts all Approved, Invoiced, and Submitted amounts from Allocated. If you have a large number of Approved (but not yet invoiced) activities, they're already deducted. This is a conservative calculation to prevent over-servicing a budget.
+
+    **What happens when Remaining reaches zero?**
+    CoordHub shows the budget row in red. New activities can technically still be logged against this support item, but they won't be claimable from the NDIA — the budget is exhausted. If you continue to log activities after the budget runs out, discuss with the participant and their planner about whether a plan review is needed.
+
+    **Can I increase the Allocated amount in CoordHub?**
+    Yes — if the participant's plan is amended by the NDIA and the budget increases, update the Allocated amount in CoordHub to match. Go to the participant's Plans tab, open the plan, and edit the budget. The change takes effect immediately.
+  </Accordion>
+</AccordionGroup>
