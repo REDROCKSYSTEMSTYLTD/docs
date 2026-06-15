@@ -9,20 +9,20 @@ The Reports section gives you downloadable reports across your organisation's da
 ## Report categories
 
 <CardGroup cols={2}>
-  <Card title="Participants" icon="users">
-    Participant-level reports — active caseload, participant demographics, status summaries.
+  <Card title="Activity Reports" icon="list-check">
+    Activity logs by coordinator, participant, date range, or support item. The primary evidence base for NDIS audits and supervision reviews.
   </Card>
-  <Card title="Activities" icon="list-check">
-    Activity logs by coordinator, participant, date range, or support item. Useful for internal review and audit evidence.
+  <Card title="Budget Reports" icon="chart-bar">
+    Budget utilisation by participant or support category. Snapshot view of plan spend versus allocation for any date range.
   </Card>
-  <Card title="Compliance" icon="shield-check">
-    Staff compliance status, training register, supervision records, incident summary, COI register.
+  <Card title="Register Exports" icon="table">
+    PDF and CSV exports of the four audit-ready registers: Risk, Supervision, Training, and CAPA. Formatted for direct inclusion in an audit evidence pack.
   </Card>
-  <Card title="Finance" icon="building-columns">
-    Revenue reports, invoice summaries, budget utilisation by participant or support category.
+  <Card title="Data Export" icon="download">
+    Full data exports across participants, activities, and contacts. Use for internal analysis, board reporting, or migration.
   </Card>
-  <Card title="Staff" icon="id-badge">
-    Staff activity, caseload distribution, supervision records.
+  <Card title="Compliance Reports" icon="shield-check">
+    Staff compliance status — worker screening, training completion, supervision currency, COI disclosures.
   </Card>
 </CardGroup>
 
@@ -51,3 +51,17 @@ Pull the four audit-ready register PDFs first — Risk, Supervision, Training, a
 <Tip>
   For NDIS audit preparation, use the Register Exports section — see [Register exports](/reports/register-exports) for the four audit-ready register downloads.
 </Tip>
+
+<AccordionGroup>
+  <Accordion title="Common questions">
+    <Accordion title="Can I run a report covering multiple participants at once?">
+      Yes. Most reports in CoordHub support multi-participant filtering. In the Activity Reports section, leave the participant filter blank to include all participants, then apply other filters (coordinator, date range, support category) as needed. The resulting CSV will include a participant column so you can sort or pivot in Excel.
+    </Accordion>
+    <Accordion title="How far back do reports go?">
+      Reports can be run across your full data history — there's no minimum or maximum date range enforced by CoordHub. For very large date ranges (more than 12 months), export to CSV rather than PDF, as PDF generation can time out on large datasets.
+    </Accordion>
+    <Accordion title="What's the difference between Reports and Register Exports?">
+      Reports are generated on demand and filtered by your criteria — you choose what to include. Register Exports are pre-defined exports of the four compliance registers in a standardised format designed for auditors. Use Reports for operational visibility; use Register Exports when preparing an audit evidence pack.
+    </Accordion>
+  </Accordion>
+</AccordionGroup>
