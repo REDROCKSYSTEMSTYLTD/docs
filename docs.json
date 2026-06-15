@@ -205,7 +205,7 @@
     }
   },
   "contextual": {
-    "options": ["copy", "view", "claude", "chatgpt"]
+    "options": ["copy", "view"]
   },
   "seo": {
     "indexing": "all",
