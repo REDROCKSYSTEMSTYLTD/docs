@@ -1,0 +1,186 @@
+{
+  "$schema": "https://mintlify.com/docs.json",
+  "theme": "maple",
+  "name": "CoordHub Help",
+  "colors": {
+    "primary": "#9333ea",
+    "light": "#c084fc",
+    "dark": "#7e22ce"
+  },
+  "favicon": "/favicon.svg",
+  "logo": {
+    "light": "/logo/light.svg",
+    "dark": "/logo/dark.svg",
+    "href": "https://coordhub.au"
+  },
+  "appearance": {
+    "default": "system"
+  },
+  "icons": {
+    "library": "lucide"
+  },
+  "background": {
+    "decoration": "gradient"
+  },
+  "navbar": {
+    "links": [
+      {
+        "label": "Support",
+        "href": "mailto:support@coordhub.au"
+      }
+    ],
+    "primary": {
+      "type": "button",
+      "label": "Open CoordHub",
+      "href": "https://app.coordhub.au"
+    }
+  },
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Guides",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "pages": [
+              "getting-started/what-is-coordhub",
+              "getting-started/activating-your-account",
+              "getting-started/first-login-and-mfa",
+              "getting-started/the-dashboard",
+              "getting-started/navigating-the-app",
+              "getting-started/getting-help"
+            ]
+          },
+          {
+            "group": "Participants",
+            "pages": [
+              "participants/overview",
+              "participants/adding-a-participant",
+              "participants/participant-profile",
+              "participants/documents",
+              "participants/archiving-a-participant"
+            ]
+          },
+          {
+            "group": "Activities",
+            "pages": [
+              "activities/overview",
+              "activities/logging-an-activity",
+              "activities/activity-types",
+              "activities/timers",
+              "activities/reviewing-and-editing"
+            ]
+          },
+          {
+            "group": "Plans & Budgets",
+            "pages": [
+              "plans/overview",
+              "plans/adding-a-plan",
+              "plans/budget-categories",
+              "plans/tracking-spend",
+              "plans/budget-forecasting"
+            ]
+          },
+          {
+            "group": "Goals",
+            "pages": [
+              "goals/overview",
+              "goals/adding-goals",
+              "goals/linking-activities"
+            ]
+          },
+          {
+            "group": "Contacts",
+            "pages": [
+              "contacts/overview",
+              "contacts/adding-a-contact",
+              "contacts/contact-roles"
+            ]
+          },
+          {
+            "group": "Service Agreements",
+            "pages": [
+              "service-agreements/overview",
+              "service-agreements/creating",
+              "service-agreements/sending-for-signature",
+              "service-agreements/managing-unsigned"
+            ]
+          },
+          {
+            "group": "Finance & Billing",
+            "pages": [
+              "finance/overview",
+              "finance/creating-invoices",
+              "finance/batch-invoicing",
+              "finance/myplace-export",
+              "finance/claims-history",
+              "finance/payment-records"
+            ]
+          },
+          {
+            "group": "Providers",
+            "pages": [
+              "providers/overview",
+              "providers/adding-a-provider",
+              "providers/provider-documents"
+            ]
+          },
+          {
+            "group": "Reports",
+            "pages": [
+              "reports/overview",
+              "reports/activity-reports",
+              "reports/budget-reports",
+              "reports/register-exports",
+              "reports/exporting-data"
+            ]
+          },
+          {
+            "group": "Calendar",
+            "pages": [
+              "calendar/overview",
+              "calendar/scheduling",
+              "calendar/connecting-your-calendar"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "What's New",
+        "groups": [
+          {
+            "group": "Changelog",
+            "pages": [
+              "changelog/index"
+            ]
+          }
+        ]
+      }
+    ],
+    "global": {
+      "anchors": [
+        {
+          "anchor": "Open CoordHub",
+          "href": "https://app.coordhub.au",
+          "icon": "arrow-up-right"
+        },
+        {
+          "anchor": "Support",
+          "href": "mailto:support@coordhub.au",
+          "icon": "mail"
+        }
+      ]
+    }
+  },
+  "contextual": {
+    "options": ["copy", "view", "claude", "chatgpt"]
+  },
+  "footer": {
+    "socials": {
+      "linkedin": "https://linkedin.com/company/redrocksystems"
+    }
+  },
+  "seo": {
+    "indexing": "all"
+  }
+}
