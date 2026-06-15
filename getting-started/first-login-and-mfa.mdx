@@ -1,0 +1,53 @@
+---
+title: "First login & MFA setup"
+description: "Logging into CoordHub and setting up mandatory multi-factor authentication."
+icon: "shield-check"
+---
+
+CoordHub requires multi-factor authentication (MFA) for every account. MFA adds a second verification step at login — you'll need an authenticator app on your phone.
+
+## Before you start
+
+Download an authenticator app before you begin. Any TOTP-compatible app works:
+
+- **Google Authenticator** (iOS / Android)
+- **Microsoft Authenticator** (iOS / Android)
+- **Authy** (iOS / Android / Desktop)
+
+## Logging in for the first time
+
+<Steps>
+  <Step title="Go to app.coordhub.au">
+    Open [app.coordhub.au](https://app.coordhub.au) in your browser. Enter your email address and password.
+  </Step>
+  <Step title="Open the MFA enrolment screen">
+    After entering your password, CoordHub automatically takes you to the MFA setup page. You'll see a QR code on screen.
+  </Step>
+  <Step title="Scan the QR code">
+    Open your authenticator app and tap the **+** or **Add account** button. Choose **Scan QR code** and point your camera at the code on screen.
+
+    If you can't scan the code, tap **Can't scan?** on the CoordHub page to reveal a manual entry key you can type into your app instead.
+  </Step>
+  <Step title="Enter the 6-digit code">
+    Your authenticator app will display a 6-digit code. Enter it into the CoordHub verification field and click **Verify**. The code refreshes every 30 seconds — if it's about to expire, wait for the next one.
+  </Step>
+  <Step title="Save your backup codes">
+    CoordHub shows you a set of one-time backup codes. Save these somewhere secure — a password manager is ideal. If you ever lose access to your authenticator app, these codes are your only way back in.
+  </Step>
+</Steps>
+
+## Logging in after MFA is set up
+
+Every subsequent login asks for your email, password, and then your current 6-digit MFA code.
+
+## What happens next
+
+After your first successful MFA login, you land on your dashboard. MFA is now active — you won't be asked to set it up again.
+
+<Warning>
+  If you lose access to your authenticator app and don't have backup codes, contact your organisation's owner or administrator. They can reset your MFA from Settings → Team.
+</Warning>
+
+<Tip>
+  Use your password manager to store your CoordHub backup codes alongside your password — they're only useful if you can find them when you need them.
+</Tip>
