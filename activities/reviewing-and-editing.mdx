@@ -30,12 +30,52 @@ Senior Coordinators, Administrators, and Owners can approve activities in the **
   </Step>
   <Step title="Review the activity">
     Click an activity to open the full record. Check the participant, support item, date, duration, and case note.
+
+    Key things to check before approving:
+    - The support item matches the participant's plan budget categories
+    - The date falls within the participant's current plan period
+    - The case note is specific enough to serve as an audit record (see [What makes a good case note?](/activities/logging-an-activity#what-makes-a-good-case-note))
+    - The duration is reasonable for the activity type
   </Step>
   <Step title="Approve or reject">
     - **Approve** — activity moves to Approved status and becomes available for invoicing
     - **Reject** — activity returns to the coordinator with a note explaining what needs to be corrected
   </Step>
 </Steps>
+
+## Bulk approving activities
+
+At end-of-month, there may be a large queue of activities to approve before invoicing can proceed. Use bulk approval to process them efficiently:
+
+<Steps>
+  <Step title="Go to Activities → Pending">
+    The Pending view shows all pending activities.
+  </Step>
+  <Step title="Filter to the period you're approving">
+    Use the date range filter to narrow to the activities you want to batch-approve (e.g. all activities from the past month).
+  </Step>
+  <Step title="Select activities">
+    Tick the checkbox on each row you want to approve, or use **Select All** to select the entire filtered view.
+  </Step>
+  <Step title="Click Bulk Approve">
+    Click **Bulk Approve** in the toolbar. CoordHub approves all selected activities at once.
+  </Step>
+</Steps>
+
+<Warning>
+  Bulk approval approves every selected activity without opening each one for review. Use it only when you've already reviewed the queue and are confident the activities are correct. If you approve an activity that needs correction, an administrator will need to return it to Draft — there's no undo.
+</Warning>
+
+## Sending an activity back for correction
+
+If an activity has errors (wrong support item, incorrect duration, insufficient case note), reject it with an explanatory note:
+
+1. Open the activity from the Pending queue
+2. Click **Reject**
+3. In the rejection note field, describe specifically what needs to be corrected (e.g. "Case note is too brief — please expand to describe what was discussed and what the next steps are")
+4. Click **Confirm Rejection**
+
+The coordinator receives a notification and the activity returns to Draft status. They can then edit and resubmit.
 
 ## After approval
 
@@ -46,5 +86,5 @@ Once an activity is approved:
 - An administrator can return it to Draft if a correction is needed
 
 <Info>
-  Administrators can bulk-approve activities from the Pending view — useful at end-of-month when there's a queue to process before invoicing.
+  If an approved activity needs to be corrected after the fact, go to the activity record and click **Return to Draft** (Administrators only). The activity disappears from the invoice queue until it's corrected and re-approved.
 </Info>

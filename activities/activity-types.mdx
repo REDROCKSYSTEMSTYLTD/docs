@@ -10,36 +10,50 @@ CoordHub aligns to the NDIS support catalogue. When you log a billable activity,
 
 The most common support items for Support Coordinators are:
 
-| Support Item | Code | Category |
-|---|---|---|
-| Support Coordination | 07_002_0106_8 | Support Coordination (07) |
-| Specialist Support Coordination | 07_004_0132_8 | Support Coordination (07) |
-| Psychosocial Recovery Coaching | 07_006_0128_8 | Support Coordination (07) |
+| Support Item | Code | Registration Group | Category |
+|---|---|---|---|
+| Support Coordination | 07_002_0106_8 | 0106 | Support Coordination (07) |
+| Specialist Support Coordination | 07_004_0132_8 | 0132 | Support Coordination (07) |
+| Psychosocial Recovery Coaching | 07_006_0128_8 | 0128 | Support Coordination (07) |
 
 Your organisation's administrator configures which support items are available to select in the activity form under Settings → Activities.
 
 ## Billable vs. non-billable
 
-**Billable activities** draw from the participant's NDIS plan budget. When approved, they become available for invoicing and PRODA claims.
+<Tabs>
+  <Tab title="Billable activities">
+    **Billable activities** draw from the participant's NDIS plan budget. When approved, they become available for invoicing and PRODA claims.
 
-**Non-billable activities** are tracked but not charged. Common non-billable types include:
-- Internal team meetings
-- Administrative work not claimable under the NDIS
-- Activity logged in error (before it's approved)
+    To log a billable activity:
+    - The participant must have an active NDIS plan
+    - The plan must have a budget for the support category matching the support item
+    - Your organisation must be registered for the registration group that covers the support item
 
-Your administrator creates and manages non-billable activity types under Settings → Activities.
+    The NDIS Price Guide sets maximum hourly rates for each support item. CoordHub applies your organisation's configured rates, which must be at or below the Price Guide maximums.
+  </Tab>
+  <Tab title="Non-billable activities">
+    **Non-billable activities** are tracked but not charged. Common uses:
+    - Internal team meetings
+    - Administrative work not claimable under the NDIS
+    - Travel time where travel is not claimed separately
+    - Supervision participation
+    - Training and professional development
+
+    Your administrator creates and manages non-billable activity types under Settings → Activities. Non-billable activities still appear in activity reports and are useful for workload tracking.
+  </Tab>
+</Tabs>
 
 ## Cancellation types
 
 If you need to cancel an activity, CoordHub captures the NDIS cancellation reason so the correct claim type is applied to the PRODA export:
 
-| Reason | NDIS claim type |
-|---|---|
-| Cancelled with adequate notice | No claim |
-| Short notice cancellation (within 2 business days) | CancellationWithin2Days |
-| No show — participant | CancellationNoShow |
-| No show — provider | No claim |
+| Reason | NDIS claim type | When it applies |
+|---|---|---|
+| Cancelled with adequate notice (>2 business days) | No claim | Participant or provider cancels with sufficient notice |
+| Short notice cancellation (within 2 clear business days) | CancellationWithin2Days | Participant cancels within 2 business days of the scheduled session |
+| No show — participant | CancellationNoShow | Participant does not attend without any notice |
+| No show — provider | No claim | Provider cancels without notice — provider absorbs the cost |
 
 <Info>
-  NDIS cancellation rules and claim types are set by the NDIS Price Guide. CoordHub derives the correct claim type automatically based on the cancellation reason you select and the notice period.
+  NDIS cancellation rules and claim types are set by the NDIS Price Guide, which is updated annually (usually in July). CoordHub derives the correct claim type automatically based on the cancellation reason you select and the notice period. Check the current Price Guide for the exact definition of "clear business days" if you're uncertain.
 </Info>
