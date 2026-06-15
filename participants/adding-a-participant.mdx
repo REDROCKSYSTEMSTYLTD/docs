@@ -6,6 +6,25 @@ icon: "user-plus"
 
 There are two ways to add a participant: converting a referral that's already in CoordHub, or adding them directly. Converting a referral is faster because the details you've already captured flow through automatically.
 
+## Before you start
+
+Have this information ready:
+
+<Info>
+  **Required information to add a participant:**
+  - Full legal name (first and last)
+  - 9-digit NDIS number (from their current plan or myGov/NDIA correspondence)
+  - Date of birth
+  - Current residential address (suburb, state, postcode)
+  - Plan management type (NDIA-managed, plan-managed, or self-managed)
+  - If plan-managed: the name of their plan manager
+
+  **Helpful but not required at this stage:**
+  - Current NDIS plan document (needed to set up budgets in a later step)
+  - Emergency contact details
+  - Clinical flags (behaviour of concern, suicide risk, FDV, etc.)
+</Info>
+
 ## Option 1 — Convert a referral (recommended)
 
 If you've already received a referral for this person:
@@ -54,3 +73,16 @@ Once the participant is added, complete their intake assessment under the **Inta
 <Warning>
   CoordHub uses the NDIS number to link records across modules. Double-check it against the participant's current plan before saving — correcting it later requires an administrator.
 </Warning>
+
+<AccordionGroup>
+  <Accordion title="Common questions">
+    **Can I add a participant without an NDIS number?**
+    A participant can be added without an NDIS number — leave the field blank and CoordHub will save the record. However, you won't be able to create PRODA exports or properly track budgets until the NDIS number is entered. Add it as soon as you have it confirmed.
+
+    **What's the difference between adding from a referral vs. adding directly?**
+    They create the same type of participant record. The difference is data entry: converting a referral pre-fills the form from information you've already captured. Adding directly means entering everything from scratch. If you already have a referral record, always convert — it's faster and avoids data entry errors.
+
+    **Can I have two participants with the same name?**
+    Yes — CoordHub doesn't block duplicate names. The NDIS number is the unique identifier. If you have two participants with the same name, use the NDIS number (or their date of birth as a secondary identifier) when searching.
+  </Accordion>
+</AccordionGroup>

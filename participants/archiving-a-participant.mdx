@@ -10,14 +10,39 @@ When support coordination ends for a participant, you exit them in CoordHub. Thi
 
 Exiting a participant requires a **Senior Coordinator**, **Administrator**, or **Owner** role. Standard coordinators do not have this permission.
 
-## Before you start
+## Before you exit — checklist
 
-Make sure all activities, invoices, and claims for this participant are in a final state before exiting:
-- All billable activities should be invoiced and submitted
-- Any open claims should be processed
-- Outstanding consent records or service agreements should be noted
+Work through this checklist before proceeding. Exiting a participant is not reversible without administrator action.
 
-## Steps
+<AccordionGroup>
+  <Accordion title="Pre-exit checklist (expand and work through before proceeding)">
+    **1. All billable activities are approved, invoiced, and submitted**
+    Go to the participant's Activities tab. Filter by Status = Approved — any approved activities not yet in an invoice will be abandoned if the plan is closed. Invoice and submit them first. Also check for any Pending activities — approve or reject them before exiting.
+
+    **2. All invoices are in a final state**
+    Go to Finance → Invoices, filter by this participant. Any Draft or Sent invoices that haven't been paid need attention. Sent invoices to plan managers should be followed up for payment. NDIA-managed invoices should be included in a PRODA submission.
+
+    **3. Open CAPAs are resolved or transferred**
+    Go to Compliance → CAPA and filter by this participant. If there are open corrective actions linked to incidents involving this participant, either close them out or update the record to note that the participant has exited.
+
+    **4. Service agreements are marked with the correct end status**
+    The active service agreement should be left as-is — CoordHub will mark it as Expired when the plan ends. If there are Sent agreements that were never signed, update them to note the participant exited before signing.
+
+    **5. Documents are complete and filed**
+    Confirm that the participant's key documents are uploaded: current NDIS plan PDF, signed service agreement, most recent consent forms, signed SA. These documents need to remain accessible for 7 years after exit.
+
+    **6. Consent records are up to date**
+    Check the Consent tab. If there are expired consent records, update their status to Expired so the audit trail is clean.
+
+    **7. The participant or their representative has been notified**
+    Exit documentation should note that the participant or their representative has been informed that the support coordination arrangement is ending. If there's a handover to another coordinator or provider, document it in a non-billable activity note.
+
+    **8. Handover is complete (if transferring)**
+    If the participant is transferring to another support coordination provider, ensure the handover is complete and documented. The new provider will need a copy of the participant's plan and SA. Do not share clinical notes or intake data without explicit consent from the participant.
+  </Accordion>
+</AccordionGroup>
+
+## Steps to exit
 
 <Steps>
   <Step title="Open the participant profile">
@@ -26,16 +51,8 @@ Make sure all activities, invoices, and claims for this participant are in a fin
   <Step title="Find the Exit section">
     At the bottom of the Overview tab there's a danger zone card labelled **Exit Participant**. This is intentionally at the bottom to prevent accidental clicks.
   </Step>
-  <Step title="Complete the exit checklist">
-    A modal opens with a 6-item exit checklist:
-    1. Final activities logged and approved
-    2. Outstanding invoices resolved
-    3. Plan end dates updated
-    4. Providers notified
-    5. Documents filed
-    6. Handover completed (if transferring to another organisation)
-
-    Work through each item and tick them off. You can proceed without ticking every item, but all items are recorded.
+  <Step title="Complete the exit checklist in CoordHub">
+    A modal opens with a 6-item exit checklist. Work through each item and tick them off. You can proceed without ticking every item, but all items are recorded.
   </Step>
   <Step title="Select an exit reason">
     Choose the reason for exit from the dropdown (e.g. plan ended, participant relocated, transferred to another coordinator, support no longer required).
@@ -55,3 +72,16 @@ Make sure all activities, invoices, and claims for this participant are in a fin
 <Info>
   Exited participants can be found by filtering the participant list to show "Exited" status. Records must be retained for 7 years under NDIS record-keeping requirements.
 </Info>
+
+<AccordionGroup>
+  <Accordion title="Common questions">
+    **Can I un-exit a participant if they re-engage?**
+    Yes — an Administrator or Owner can change the status from Exited back to Active. Contact your administrator. The record becomes editable again and the previous exit event is retained in the audit history.
+
+    **What happens to the participant's budgets when they're exited?**
+    Active plan budgets are marked as ended at the exit date. No new activities can be billed to them. Historical budget data is preserved exactly as it was.
+
+    **Do I need to notify the NDIA when a participant exits?**
+    There is no formal NDIA notification required when a participant exits your organisation. However, if the participant is transferring to another registered provider, the new provider will need to link them in myPlace. If the participant no longer requires support coordination, they may want to contact their LAC or the NDIA to update their plan.
+  </Accordion>
+</AccordionGroup>

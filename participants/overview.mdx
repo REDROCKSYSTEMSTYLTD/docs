@@ -12,19 +12,24 @@ Every participant moves through a set of statuses over their time with your orga
 
 | Status | Meaning |
 |---|---|
-| **Referral** | Initial referral received — not yet a confirmed participant |
-| **Intake** | Onboarding in progress — completing intake assessment |
-| **Active** | Currently receiving support coordination |
-| **On hold** | Temporarily not receiving active support |
-| **Exited** | Support has ended — record is read-only |
+| <Badge>Referral</Badge> | Initial referral received — intake not yet started. The participant appears in your Referrals list. No billing can occur at this stage. |
+| <Badge variant="warning">Intake</Badge> | Onboarding in progress. You've accepted the referral and are completing the 28-section intake assessment. Non-billable activities can be logged. |
+| <Badge variant="success">Active</Badge> | Currently receiving support coordination. All features available — activities, plans, billing, service agreements. |
+| <Badge variant="secondary">On Hold</Badge> | Temporarily not receiving active support — for example, the participant is in hospital, has paused engagement, or their plan is under review. You can still view their record but cannot log new billable activities. |
+| <Badge variant="destructive">Exited</Badge> | Support has ended. The record becomes read-only. All historical data is preserved for compliance purposes. |
 
-Status changes are tracked in the audit history. Once a participant is exited, their record cannot be edited — this protects the integrity of historical data for compliance purposes.
+Status changes are tracked in the audit history with a timestamp and the name of the staff member who made the change. Once a participant is Exited, their record cannot be edited — this protects the integrity of historical data for compliance purposes.
 
 ## Finding participants
 
-Your participant list is at **Participants** in the sidebar. By default it shows your caseload. Administrators and owners can see all participants across the organisation.
+Your participant list is at **Participants** in the sidebar. By default it shows your assigned caseload. Administrators and owners can see all participants across the organisation.
 
-Use the search bar (Cmd+K / Ctrl+K) to find a participant by name or NDIS number from anywhere in CoordHub.
+Use the search bar (**Cmd+K** / **Ctrl+K**) to find a participant by name or NDIS number from anywhere in CoordHub.
+
+The participant list can be filtered by:
+- **Status** — Active, On Hold, Intake, Referral, Exited
+- **Coordinator** — filter to a specific staff member (Admins only)
+- **Plan expiry** — participants with plans expiring within a set period
 
 ## What's in a participant profile
 
@@ -48,3 +53,16 @@ Each participant has a profile with a sidebar of tabs on the left:
 <Tip>
   The Overview tab shows clinical flags at a glance — behaviour of concern, suicide risk, FDV, child protection, and substance use. These are set during intake and visible to anyone with access to the participant.
 </Tip>
+
+<AccordionGroup>
+  <Accordion title="Common questions">
+    **Can I move a participant back from Exited to Active?**
+    Yes — an Administrator or Owner can change the status from Exited back to Active. The record will become editable again. This is useful if a participant re-engages after a gap. All historical data is preserved.
+
+    **Why can't I see a participant in my list?**
+    The most common reasons: the participant is assigned to a different coordinator (Admins can see everyone, Coordinators only see assigned participants), the participant has an Exited status and your filter is set to Active only, or the participant was set up under a different spelling of their name. Try searching by NDIS number instead of name.
+
+    **What's the difference between the Representatives tab and the Contacts tab?**
+    The Contacts tab holds everyone connected to a participant — formal and informal. The Representatives tab is specifically for formal legal representatives (OPA WA guardians, NDIA nominees, advocates) with authority documentation attached. If someone has legal signing authority, they should be in both tabs.
+  </Accordion>
+</AccordionGroup>
