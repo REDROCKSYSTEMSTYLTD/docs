@@ -1,0 +1,42 @@
+---
+title: "Budget categories"
+description: "NDIS support categories in CoordHub and how management types work at the budget level."
+icon: "layer-group"
+---
+
+## NDIS support categories
+
+CoordHub uses the standard NDIS support category structure. Each budget you add to a plan is assigned to one category. The category determines which NDIS line items (support items) can be billed against it.
+
+The categories most commonly used in support coordination are:
+
+| Category | Number | Common use |
+|---|---|---|
+| Daily Activities | 01 | Core supports — personal care, community access |
+| Social & Community Participation | 04 | Recreation, social activities |
+| Support Coordination | 07 | Support coordination and specialist SC |
+| Improved Living Arrangements | 08 | SIL-related coordination |
+| Increased Social & Community Participation | 09 | Skills development, education support |
+| Finding & Keeping a Job | 10 | Employment-related support |
+| Improved Health & Wellbeing | 11 | Allied health supports |
+| Improved Learning | 12 | Education-related supports |
+| Improved Life Choices | 13 | Plan management |
+| Improved Daily Living | 15 | Therapy supports |
+
+Your participants will typically only have budgets in the categories their plan funds — CoordHub only shows relevant categories when logging activities.
+
+## Management types
+
+Each budget can have its own management type, independent of the plan-level setting:
+
+| Management type | How it works in CoordHub |
+|---|---|
+| **NDIA-managed** | Claims are exported via PRODA and submitted directly to the NDIA. CoordHub generates the PRODA CSV for you. |
+| **Plan-managed** | Invoices are sent to the plan manager (a third-party financial intermediary). The plan manager claims from the NDIA on the participant's behalf. |
+| **Self-managed** | The participant receives the funds and pays providers directly. Rare for support coordination budgets. |
+
+The budget-level management type takes precedence over the plan-level setting. This is important when a participant has some NDIA-managed budgets and some plan-managed budgets within the same plan — a common scenario.
+
+<Info>
+  When you create an invoice, CoordHub routes it correctly based on the management type of the budget the activity drew from. NDIA-managed activities go into the PRODA export; plan-managed activities go into a regular invoice to the plan manager.
+</Info>

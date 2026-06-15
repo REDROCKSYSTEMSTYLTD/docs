@@ -1,0 +1,40 @@
+---
+title: "Plans & Budgets overview"
+description: "How NDIS plan funding is structured in CoordHub — plans, support categories, budget tracking, and plan health."
+icon: "file-invoice-dollar"
+---
+
+CoordHub models NDIS funding exactly as it works in the real world: each participant has one or more NDIS plans, and each plan contains one or more support budgets by category.
+
+## The structure
+
+```
+Participant
+└── NDIS Plan (plan period, e.g. 01/07/2025 – 30/06/2026)
+    ├── Support Coordination budget (Category 07)
+    ├── Daily Activities budget (Category 01) — if relevant
+    └── Social & Community Participation budget (Category 04) — if relevant
+```
+
+Activities you log are matched to a support budget by their support item code. CoordHub tracks how much of each budget has been approved, invoiced, and submitted — so you always know where a participant's funding stands.
+
+## Plan health
+
+CoordHub calculates a **plan health** status for each plan based on the rate of spend against the funding remaining and time left in the plan period:
+
+| Health | Meaning |
+|---|---|
+| 🟢 **On track** | Spend is proportional to the time elapsed — no action needed |
+| 🟡 **Monitor** | Spend is running slightly ahead or behind — worth watching |
+| 🟠 **At risk** | Spend rate suggests the budget will run out before the plan ends, or there will be significant underspend |
+| 🔴 **Critical** | Budget is overspent, or spend rate is severely out of range |
+
+Plan health shows on the participant's Plans tab and is summarised in the Budget Forecasting table across all participants.
+
+## PACE plans
+
+CoordHub supports both standard NDIS plans and PACE (Planning and Assessment Connected Experience) plans. PACE plans use funding periods instead of annual plan cycles. When a participant is on PACE, their plan health calculations use the PACE funding period dates rather than the plan start/end dates.
+
+<Tip>
+  When a new NDIS plan is added for a participant who already has a plan, CoordHub automatically supersedes the old plan — you don't need to manually close it.
+</Tip>

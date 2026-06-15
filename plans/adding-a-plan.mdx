@@ -1,0 +1,52 @@
+---
+title: "Adding an NDIS plan"
+description: "How to add a new NDIS plan for a participant in CoordHub."
+icon: "plus"
+---
+
+## Before you start
+
+Have the participant's NDIS plan document ready. You'll need the plan start and end dates, the support categories approved, and the dollar amounts for each category.
+
+## Steps
+
+<Steps>
+  <Step title="Go to the participant's Plans tab">
+    Open the participant profile and click **Plans** in the left sidebar.
+  </Step>
+  <Step title="Click Add Plan">
+    Click **Add Plan** in the top-right corner of the Plans tab.
+  </Step>
+  <Step title="Enter the plan dates">
+    Set the **Plan Start Date** and **Plan End Date** from the participant's NDIS plan document. These are usually a 12-month period, or the PACE funding period dates for PACE participants.
+  </Step>
+  <Step title="Set the plan type">
+    Choose **Standard** for a regular NDIS plan, or **PACE** if the participant is on a PACE plan. PACE plans use funding period tracking instead of annual cycles.
+  </Step>
+  <Step title="Set the plan management type">
+    Select how the plan is managed overall:
+    - **NDIA-managed** — claims go directly to the NDIA via PRODA
+    - **Plan-managed** — invoices go to the plan manager, who pays the NDIA claims
+    - **Self-managed** — participant manages their own funds (rare for SC budgets)
+
+    This can be overridden at the individual budget level if different categories are managed differently.
+  </Step>
+  <Step title="Add support budgets">
+    For each support category in the participant's plan, click **Add Budget**. Enter:
+    - **Support category** (e.g. Support Coordination — Category 07)
+    - **Allocated amount** (the dollar amount in the plan for this category)
+    - **Management type** (if different from the plan-level setting)
+    - **Funding administrator** (the plan manager or NDIA, depending on management type)
+  </Step>
+  <Step title="Save the plan">
+    Click **Save**. The plan is created and becomes the participant's active plan. If there was an existing active plan, CoordHub supersedes it automatically.
+  </Step>
+</Steps>
+
+## What happens next
+
+Budget tracking starts immediately. Approved activities will draw from the correct budget category based on their support item code. Go to **Plans → Tracking Spend** to see how utilisation is calculated.
+
+<Warning>
+  Adding a new plan supersedes any existing active plan for this participant. The superseded plan becomes historical and is no longer available for new activities or invoices. Make sure all billing for the old plan is finalised before adding a new one.
+</Warning>
