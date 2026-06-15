@@ -1,0 +1,40 @@
+---
+title: "Tracking spend"
+description: "How to monitor budget utilisation for a participant's NDIS plan in CoordHub."
+icon: "chart-bar"
+---
+
+CoordHub tracks budget utilisation in real time as activities are approved, invoiced, and claimed. You can see the current state from the participant's Plans tab.
+
+## The budget utilisation view
+
+Open a participant profile and click **Plans**. Click on the active plan to see the budget breakdown. Each support budget shows:
+
+| Column | What it means |
+|---|---|
+| **Allocated** | Total amount in the NDIS plan for this category |
+| **Approved** | Activities approved but not yet invoiced |
+| **Invoiced** | Activities included in a sent invoice |
+| **Submitted** | NDIA claims lodged via PRODA |
+| **Remaining** | Allocated minus all spend (approved + invoiced + submitted) |
+
+## Plan health colours
+
+The budget row is colour-coded based on how spend is tracking against the time remaining in the plan:
+
+| Colour | Threshold | Meaning |
+|---|---|---|
+| 🟢 Green | On track | Spend rate is proportional to time elapsed |
+| 🟡 Yellow | ×1.10 overspend ratio | Slightly ahead of the expected spend rate — monitor |
+| 🟠 Orange | ×1.25 overspend ratio | Significantly ahead — take action to pace spending or seek a plan review |
+| 🔴 Red | Overspent or ×0.75 underspend | Either the budget has run out, or spend is so far behind there may be significant underspend at plan end |
+
+These thresholds follow NDIS price guide guidance and are calculated against the participant's PACE funding period (for PACE participants) or plan end date (for standard plans).
+
+## Unsubmitted activities
+
+The utilisation view also shows **unsubmitted activities** — activities that have been approved and exist in CoordHub but haven't been included in an invoice yet. This helps you spot work that's been done but not yet billed before the plan period ends.
+
+<Tip>
+  If a participant is showing as on track but has a large volume of unsubmitted activities, include those in your utilisation review — they'll become billed spend once invoiced.
+</Tip>
