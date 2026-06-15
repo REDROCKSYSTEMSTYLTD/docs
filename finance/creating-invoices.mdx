@@ -10,31 +10,52 @@ Invoices in CoordHub are built from approved activities. You don't manually ente
 
 Activities must be **Approved** before they can be invoiced. If you have activities in Draft or Pending status, get them approved first.
 
-## Steps
+## Creating an invoice
 
-<Steps>
-  <Step title="Go to Finance → Invoices">
-    In the sidebar, click **Finance**, then **Invoices**. Click **New Invoice** in the top-right corner.
-  </Step>
-  <Step title="Select the participant">
-    Start typing the participant's name. CoordHub shows matching participants with approved, un-invoiced activities.
-  </Step>
-  <Step title="Select activities to include">
-    CoordHub lists all approved activities for this participant that haven't been invoiced yet. Tick the ones you want to include in this invoice.
+<Tabs>
+  <Tab title="NDIA-managed participants">
+    For NDIA-managed participants, "creating an invoice" in CoordHub actually queues the activities for the PRODA export — there's no traditional invoice document sent to the NDIA. The PRODA CSV file is your claim.
 
-    Each activity shows the date, support item, duration, and amount. Check the amounts match what you expect before continuing.
-  </Step>
-  <Step title="Review the invoice">
-    CoordHub builds the invoice preview. Check:
-    - Correct participant name and NDIS number
-    - Correct invoice date (defaults to today — change if needed)
-    - All line items are present and correct
-    - The recipient — for plan-managed participants, confirm the plan manager details
-  </Step>
-  <Step title="Send the invoice">
-    Click **Send Invoice** to finalise and dispatch. For plan-managed participants, this sends the invoice to the plan manager. For NDIA-managed participants, the activities are queued for PRODA export instead.
-  </Step>
-</Steps>
+    <Steps>
+      <Step title="Go to Finance → Invoices">
+        In the sidebar, click **Finance**, then **Invoices**. Click **New Invoice**.
+      </Step>
+      <Step title="Select the participant">
+        Type the participant's name. CoordHub shows matching participants with approved, un-invoiced activities.
+      </Step>
+      <Step title="Select activities to include">
+        Tick the activities you want to include. Check amounts and support items before continuing.
+      </Step>
+      <Step title="Review and confirm">
+        CoordHub shows the invoice summary. For NDIA-managed participants, the recipient shows as "NDIA" and the activities will appear in the next PRODA export.
+      </Step>
+      <Step title="Create the invoice">
+        Click **Create Invoice**. Activities move to Billed status and are available in Finance → PRODA Export.
+      </Step>
+    </Steps>
+  </Tab>
+  <Tab title="Plan-managed participants">
+    For plan-managed participants, CoordHub creates a traditional invoice PDF that you send to the plan manager.
+
+    <Steps>
+      <Step title="Go to Finance → Invoices">
+        In the sidebar, click **Finance**, then **Invoices**. Click **New Invoice**.
+      </Step>
+      <Step title="Select the participant">
+        Type the participant's name. CoordHub shows matching participants with approved, un-invoiced activities.
+      </Step>
+      <Step title="Select activities to include">
+        Tick the activities you want to include. Check amounts and support items before continuing.
+      </Step>
+      <Step title="Review the invoice">
+        CoordHub builds the invoice preview. Check the plan manager's details in the recipient field — confirm you're sending to the right plan manager if the participant has budgets with different plan managers.
+      </Step>
+      <Step title="Send the invoice">
+        Click **Send Invoice**. CoordHub emails the invoice PDF to the plan manager's email address on file. The plan manager should process payment within their standard payment terms.
+      </Step>
+    </Steps>
+  </Tab>
+</Tabs>
 
 ## Returning an invoice to draft
 

@@ -6,6 +6,26 @@ icon: "building-columns"
 
 The Finance section brings together everything related to billing and payment for NDIS support coordination services. It connects directly to the activities you've logged and the plan budgets you've set up.
 
+## The billing workflow
+
+Activities flow through Finance in a predictable sequence:
+
+```mermaid
+flowchart LR
+    A[Activity Approved] --> B[Invoice Created]
+    B --> C{Management Type}
+    C -->|NDIA-managed| D[PRODA Export]
+    C -->|Plan-managed| E[Invoice to Plan Manager]
+    D --> F[myPlace Submission]
+    E --> G[Plan Manager Pays]
+    F --> H[NDIA EFT Payment]
+    G --> I[Record Payment]
+    H --> I
+    I --> J[Reconciled]
+```
+
+Understanding this flow helps you troubleshoot billing issues — if a participant's budget shows spend but no payment, trace where in the flow the activity is stuck.
+
 ## Finance hub
 
 Go to **Finance** in the sidebar to open the finance hub. The top of the page shows five KPI cards:

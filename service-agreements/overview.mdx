@@ -12,6 +12,16 @@ CoordHub creates service agreements from the participant's intake record — the
 
 ## Status lifecycle
 
+```mermaid
+flowchart LR
+    A[Draft] --> B[Sent]
+    B --> C[Signed]
+    C --> D[Active]
+    D --> E[Expired]
+    B --> F[Superseded]
+    A --> F
+```
+
 | Status | Meaning |
 |---|---|
 | **Draft** | Being prepared — not yet sent to the participant |
@@ -19,6 +29,7 @@ CoordHub creates service agreements from the participant's intake record — the
 | **Signed** | Returned with a signature — document uploaded to CoordHub |
 | **Active** | Current, signed service agreement in effect |
 | **Expired** | Plan period has ended or a new agreement supersedes this one |
+| **Superseded** | Replaced by a new version before being signed |
 
 ## What a service agreement covers
 
@@ -29,6 +40,19 @@ A CoordHub service agreement includes:
 - Plan period dates
 - Consent and privacy statements
 - Signature section for participant / representative
+
+## What must a service agreement include?
+
+Under the NDIS (Registered Supports) Rules 2018, a service agreement between a registered NDIS provider and a participant must include:
+
+1. The supports to be provided and how they'll be provided
+2. The price for each support
+3. How the participant can end the agreement (notice period)
+4. How the provider can end the agreement (notice period)
+5. Any conditions the participant must meet
+6. Complaints and dispute resolution process
+
+CoordHub's service agreement template covers these requirements. If your organisation has a customised template that differs from the CoordHub default, confirm with your compliance team that it meets all requirements.
 
 <Info>
   CoordHub uses a manual signing workflow. You create the agreement in CoordHub, print or export it as a PDF, provide it to the participant (or their guardian/nominee) for physical signature, then upload the signed copy back into CoordHub.

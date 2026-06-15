@@ -57,3 +57,33 @@ Your organisation's NDIS registration number must be entered in CoordHub before 
 <Tip>
   After NDIA payment is received, record it in CoordHub under Finance → Payments so your payment reconciliation stays up to date.
 </Tip>
+
+## Common PRODA errors and how to fix them
+
+<AccordionGroup>
+  <Accordion title="File rejected — ABN mismatch">
+    **What it means:** The ABN in the PRODA file doesn't match the ABN registered against your PRODA provider account in the NDIA system.
+
+    **How to fix:** Go to **Settings → Organisation** in CoordHub and check the ABN field. Compare it exactly to the ABN shown in your myPlace provider profile. Even a single transposed digit causes rejection. Update the ABN in CoordHub and generate a new PRODA export.
+  </Accordion>
+  <Accordion title="Claim rejected — support item not in plan">
+    **What it means:** The NDIS line item you billed is not included in the participant's current plan funding.
+
+    **How to fix:** Log in to myPlace and view the participant's plan details. Confirm which support items are funded and in which categories. Update the activity in CoordHub (Administrator returns it to draft) to use the correct support item, then re-invoice and re-export.
+  </Accordion>
+  <Accordion title="Claim rejected — date outside plan period">
+    **What it means:** The activity date falls before the plan start date or after the plan end date.
+
+    **How to fix:** Check the plan period dates on the participant's Plans tab in CoordHub. If the activity date is genuinely within the plan period but the NDIA has different dates on record, contact the NDIA to confirm. If the activity was logged with the wrong date, an administrator can return it to draft for correction.
+  </Accordion>
+  <Accordion title="Claim rejected — provider not linked to participant">
+    **What it means:** For some support types, the NDIA requires your organisation to be formally linked to the participant as their provider in myPlace before claims can be processed.
+
+    **How to fix:** Log in to myPlace and navigate to the participant's record. Add your organisation as the Support Coordination provider. Then resubmit the claim. This is a one-time setup per participant.
+  </Accordion>
+  <Accordion title="Claim rejected — duplicate claim">
+    **What it means:** The same activity (same participant, same date, same support item, same duration) has already been submitted and processed.
+
+    **How to fix:** Check Claims History in CoordHub to find the previously submitted claim for the same period. If the original claim was paid, do not resubmit. If the original claim was rejected, find the original export in Claims History and check its status in myPlace before resubmitting.
+  </Accordion>
+</AccordionGroup>

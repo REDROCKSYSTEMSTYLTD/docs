@@ -46,3 +46,35 @@ If your organisation has Xero connected, invoices created in CoordHub sync to Xe
 <Tip>
   The Finance overview KPI cards show live reconciliation status. "NDIA Reconciled" counts claims where an NDIA payment run has been matched and confirmed — a useful check that your PRODA submissions are being processed.
 </Tip>
+
+## Reconciliation workflow
+
+At the end of each month (or whenever an NDIA payment run arrives), follow this workflow to keep your records reconciled:
+
+<Steps>
+  <Step title="Check your bank statement">
+    Identify any EFT payments from the NDIA. Each payment will have a reference number (e.g. NDIA EFT XXXXXXX). Note the date and amount of each payment run.
+  </Step>
+  <Step title="Go to Finance → Payments in CoordHub">
+    Click **Finance** → **Payments**. The payment runs section shows NDIA payments that have been matched to your PRODA export history.
+  </Step>
+  <Step title="Match unmatched payment runs">
+    If a payment run appears as "Unmatched" — meaning CoordHub couldn't automatically link it to a PRODA export — click the payment run and manually select the PRODA export it corresponds to. Use the date and amount to identify the right export.
+  </Step>
+  <Step title="Record plan manager payments">
+    For plan-managed participants, go to Finance → Invoices and find invoices that have been paid. Click **Record Payment** on each one, entering the payment date, amount, and payment reference.
+  </Step>
+  <Step title="Reconcile against your accounting system">
+    If you use Xero, the Finance → Payments sync should update Xero automatically. If using another accounting system, export the payments list from CoordHub as CSV and use it to reconcile against your accounts.
+  </Step>
+</Steps>
+
+<AccordionGroup>
+  <Accordion title="Common questions">
+    **What if the NDIA pays a different amount than what I submitted?**
+    The NDIA may pay a slightly different amount due to rounding at the claim level, or because some claims in the batch were rejected. Check myPlace for the payment run details — it will show which claims were paid, which were rejected, and the total. Record the actual amount received, not the submitted amount.
+
+    **How long does it take for NDIA payments to arrive?**
+    The NDIA typically processes bulk payment requests within 3 business days of submission. If payment hasn't arrived after 5 business days, log in to myPlace and check the status of your bulk payment request.
+  </Accordion>
+</AccordionGroup>

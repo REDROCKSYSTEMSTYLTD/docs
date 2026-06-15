@@ -45,3 +45,16 @@ Use the filters at the top of the Claims page to narrow the view:
 <Info>
   If a claim is rejected by the NDIA in myPlace, it won't automatically update in CoordHub — you'll need to check myPlace directly and then manually note the rejection in CoordHub.
 </Info>
+
+<AccordionGroup>
+  <Accordion title="Common questions">
+    **How do I track when the NDIA pays?**
+    NDIA payments arrive as bank EFT transfers and are reconciled in CoordHub under Finance → Payments → Payment Runs. Each payment run corresponds to an NDIA bulk payment. Go to Finance → Payments to see payment runs and match them to your submitted PRODA claims. See [Payment records](/finance/payment-records) for the full reconciliation guide.
+
+    **What does the REPAYMENT claim type mean?**
+    REPAYMENT is an NDIS claim type used when a provider needs to return funds to the NDIA — for example, if an activity was incorrectly claimed and has been paid but needs to be written off, or if a duplicate payment occurred. REPAYMENT claims appear as negative dollar amounts in the claims history. Contact CoordHub support if you need to create a REPAYMENT claim — these require careful handling to avoid double-counting.
+
+    **A claim shows as Submitted but I haven't received payment — what do I do?**
+    Submitted means CoordHub has recorded the PRODA export as done, but it doesn't confirm the file was actually uploaded to myPlace, or that the NDIA has processed and paid it. Log in to myPlace directly and search for the bulk payment request. If it's not there, you may need to upload the PRODA file again. If it's there but shows as rejected, check the rejection reason and see the [myPlace export troubleshooting guide](/finance/myplace-export).
+  </Accordion>
+</AccordionGroup>
