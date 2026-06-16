@@ -5,66 +5,6 @@ description: "Product updates and improvements to CoordHub."
 
 Stay up to date with everything new in CoordHub. Updates are added here as features ship.
 
-<Update label="June 2026" description="Compliance">
-  **Document control library.** Compliance documents now live in a structured library with versioning, publish/draft status, and acknowledgement tracking. Coordinators see which policies apply to them and can confirm they've read them — creating a signed acknowledgement record automatically.
-</Update>
-
-<Update label="June 2026" description="Compliance">
-  **Evidence pack builder.** Generate a formatted audit evidence pack from the Compliance section — pull together your four compliance registers (Risk, Supervision, Training, CAPA), incident summaries, and worker screening records into a single downloadable PDF ready for an NDIS auditor.
-</Update>
-
-<Update label="May 2026" description="Compliance">
-  **Regulatory audit tracking.** Log your NDIS Quality and Safeguards Commission audits in CoordHub — including audit type, scope, outcome, and any non-conformances raised. Non-conformances automatically generate a linked CAPA. Upcoming audits surface on the compliance hub.
-</Update>
-
-<Update label="May 2026" description="Compliance">
-  **Four new compliance registers.** WHS incidents, emergency drills, record disposal, and data breach records now each have a dedicated register — with history tracking, evidence attachments, and bulk CSV import. All four are exportable for audit evidence packs.
-</Update>
-
-<Update label="May 2026" description="Compliance">
-  **CAPA improvements.** CAPAs raised from incidents or complaints automatically pre-fill with context from the source record. Closing a CAPA now requires an effectiveness review — you document whether the corrective action actually fixed the root cause before it can be marked closed.
-</Update>
-
-<Update label="May 2026" description="Compliance">
-  **OneDrive sync.** Documents uploaded to CoordHub can now be synced bidirectionally with your Microsoft 365 OneDrive — keeping your coordination files accessible both in CoordHub and in your organisation's document management setup.
-</Update>
-
-<Update label="April 2026" description="Compliance">
-  **Bulk import for incidents and complaints.** Import historical incident and complaint records via CSV — with a dry-run preview that validates participant NDIS numbers and flags any rows that won't import before you commit. Useful when migrating from another system.
-</Update>
-
-<Update label="April 2026" description="Compliance">
-  **Corporate risk register.** The Risk register now supports a full supersession model — when you update a risk entry, the previous version is preserved in history rather than overwritten. Owner assignment, review dates, and treatment controls are tracked per version.
-</Update>
-
-<Update label="April 2026" description="Compliance">
-  **Register review reminders.** CoordHub now sends automated email reminders when a compliance register entry is due for review — including risks, supervision records, and provider compliance documents. Reminders are sent to the assigned owner 30 days before the review date.
-</Update>
-
-<Update label="April 2026" description="Participants">
-  **Service agreement signing reminders.** CoordHub now sends automated email reminders to coordinators when a service agreement has been sent but not returned within 14 days. Unsigned SAs also surface on the dashboard Expiring Items card.
-</Update>
-
-<Update label="April 2026" description="Participants">
-  **Scope of Authority register.** Record formal delegations and sign-off authorities for your organisation — who can approve activities, sign service agreements, and authorise payments — with version history and effective date tracking.
-</Update>
-
-<Update label="April 2026" description="Reports">
-  **Reports Centre.** A new dedicated Reports section replaces scattered export buttons across the app. Activity reports, budget reports, register exports, and data exports are all in one place — with consistent filtering by date range, coordinator, and participant.
-</Update>
-
-<Update label="March 2026" description="Compliance">
-  **Complaints and feedback improvements.** Complaints now have reference numbers (CMP-XXXX), an investigation officer field, and a severity classification. The complaints list is filterable by severity and outcome. Bulk CSV export added for complaints history.
-</Update>
-
-<Update label="February 2026" description="Activities">
-  **Calendar view.** Activities are now visible on a week and month calendar — same data as the activities list, displayed across time. Useful for spotting gaps in logged time and reviewing a participant's service history at a glance.
-</Update>
-
-<Update label="January 2026" description="Platform">
-  **CoordHub launched.** Support Coordination case management, NDIS billing, compliance registers, and participant records — built specifically for Australian NDIS Support Coordination providers.
-</Update>
-
 <Update label="13 June 2026" description="Finance">
   **Batch invoicing is now smarter.** When creating invoices in bulk, CoordHub now automatically filters to NDIA-managed participants and shows the dollar amount for each invoice before you confirm — no more guessing what you're about to send.
 </Update>
@@ -89,10 +29,154 @@ Stay up to date with everything new in CoordHub. Updates are added here as featu
   **NDIS cancellation codes.** When cancelling an activity, CoordHub now captures the correct NDIS cancellation reason — short notice, no show, within 2 business days — and applies the right claim type automatically when you export to PRODA.
 </Update>
 
-<Update label="June 2026" description="Finance">
-  **myPlace export improvements.** The PRODA CSV export now includes participant names as a column, making it easier to verify your claims before uploading to the NDIA portal. A download button replaces the previous clipboard flow.
+<Update label="8 June 2026" description="Finance">
+  **Billing calculator and correct NDIS rates.** The billing engine now uses the exact NDIS Price Guide rates for 2025–26, applies the correct travel cap rules, and recalculates duration automatically when you adjust start and end times. Activity amounts can no longer be manually overridden to a value inconsistent with the support item rate.
 </Update>
 
-<Update label="June 2026" description="Finance">
-  **Claims history tab.** The Finance section now includes a dedicated Claims tab showing all your submitted NDIS claims, their statuses, and the claim type applied to each line — a clear record of everything that's been lodged.
+<Update label="3 June 2026" description="Finance">
+  **Partially paid claim status.** Claims can now be marked as partially paid when the NDIA has processed only part of a bulk payment — useful for tracking split payment runs without losing the outstanding balance.
+</Update>
+
+<Update label="1 June 2026" description="Compliance">
+  **Document library — versioning and acknowledgements.** The document control register now supports a full version lifecycle: create a draft version, edit it, then publish it as the current version. Previous versions are preserved in history. Staff acknowledgements are tracked per version — you can see who has read the current version and who hasn't.
+</Update>
+
+<Update label="1 June 2026" description="Compliance">
+  **Evidence pack — complete coverage.** The evidence pack builder now includes all registers: WHS incidents, emergency drills, data breaches, disposal records, and regulatory audits — in addition to the original four compliance registers. Download a single ZIP with formatted PDFs and document links ready for an NDIS auditor.
+</Update>
+
+<Update label="31 May 2026" description="Compliance">
+  **CAPA cross-register linkage.** Corrective and Preventive Actions (CAPAs) can now be linked to records from any register — not just incidents. Link a CAPA to a supervision finding, a WHS incident, a complaint, or an audit non-conformance.
+</Update>
+
+<Update label="31 May 2026" description="Compliance">
+  **Complaints: CMP reference numbers, investigation officer, and severity.** All complaints now receive a CMP-XXXX reference number on creation. You can assign an investigation officer, classify severity (low, medium, high), and filter the complaints list by severity.
+</Update>
+
+<Update label="30 May 2026" description="Compliance">
+  **Regulatory audit tracking.** Log NDIS Quality and Safeguards Commission audits in CoordHub — audit type, scope, outcome, and non-conformances. Non-conformances automatically generate a linked CAPA. Upcoming audits surface on the compliance hub with reminder alerts.
+</Update>
+
+<Update label="30 May 2026" description="Compliance">
+  **Four new compliance registers: WHS, emergency drills, record disposal, and data breaches.** Each register has full CRUD, history tracking, evidence attachments, and bulk CSV import. All are included in the evidence pack export.
+</Update>
+
+<Update label="29 May 2026" description="Compliance">
+  **Register review cadence.** All four audit-ready registers (Risk, Supervision, Training, CAPA) now have review due dates. Overdue records are flagged with a badge. Automated email reminders go to the record owner 30 days before each review date. You can extend a review date with a documented reason.
+</Update>
+
+<Update label="28 May 2026" description="Compliance">
+  **Bulk CSV import for risks, CAPAs, incidents, and complaints.** Upload historical records from your previous system using CSV templates. A dry-run preview validates every row and flags errors before you commit — including participant NDIS number resolution and staff name matching.
+</Update>
+
+<Update label="25 May 2026" description="Compliance">
+  **CAPA closure gate.** CAPAs can no longer be closed without completing an effectiveness review. Before marking a CAPA closed, you must document whether the corrective action actually resolved the root cause — creating an auditable closure record.
+</Update>
+
+<Update label="21 May 2026" description="Compliance">
+  **Corporate risk register overhaul.** The risk register now supports a full supersession model — updating a risk preserves the previous version in history rather than overwriting it. Risk owners are assigned by staff member. Import your existing risks from CSV with a dry-run preview.
+</Update>
+
+<Update label="20 May 2026" description="Platform">
+  **Insurance certificate upload and auditor access.** Upload your organisation's insurance certificates directly in Settings. A new Auditor access role lets external parties view compliance records and reports without accessing participant data.
+</Update>
+
+<Update label="12 May 2026" description="Compliance">
+  **Document control register redesign.** The document control register now supports source type (policy, procedure, form, template), governance fields (owner, review frequency), a visibility level, and a full version history. A new supersedes picker lets you formally replace an old document. All staff can access the Documents section from the sidebar.
+</Update>
+
+<Update label="7 May 2026" description="Platform">
+  **OneDrive sync.** Documents uploaded to CoordHub are automatically synced to your Microsoft 365 OneDrive in an NDIS-compliant folder structure. A nightly reconcile job catches any missed syncs. The sync generates a Master Document Register spreadsheet and a per-participant file index.
+</Update>
+
+<Update label="3 May 2026" description="Plans">
+  **PACE plan support.** CoordHub now supports PACE (Planning and Assessment Connected Experience) plans alongside standard NDIS plans. PACE plans use funding periods instead of annual cycles, with automatic rollover on period change. A setup wizard guides you through converting a participant to PACE.
+</Update>
+
+<Update label="29 April 2026" description="Reports">
+  **Reports Centre.** A new dedicated Reports section replaces scattered export buttons. Four reports are available: Caseload Summary, Incidents Log, Worker Screening Register, and Document Expiry. Filter by date range, coordinator, or participant. Export as PDF or CSV. An evidence pack builder generates a ZIP of compliance documents for audit preparation.
+</Update>
+
+<Update label="21 April 2026" description="Documents">
+  **Signing reminders and reissue.** CoordHub now automatically sends reminder emails when a signed document hasn't been returned — at 7 days and 14 days after sending. Reminders can be paused or resumed per document. Expired signing links can be reissued without recreating the document.
+</Update>
+
+<Update label="17 April 2026" description="Platform">
+  **New login design.** The login page has been redesigned with CoordHub branding. MFA enrolment and verification screens are cleaner and faster to complete.
+</Update>
+
+<Update label="17 April 2026" description="Activities">
+  **Activities v2.** The activity list has been rebuilt with a virtualised view that handles large caseloads without slowing down. New features: saved view presets (My Activities, Pending Approval, This Week, This Month, and more), a density toggle, a KPI strip showing total hours and ready-to-invoice amounts, and a bulk action bar for submitting, approving, or exporting multiple activities at once — with a 10-second undo window on bulk operations.
+</Update>
+
+<Update label="14 April 2026" description="Compliance">
+  **Scope of Authority.** CoordHub now formally tracks who has legal authority to sign documents for each participant. Guardians, nominees, and representatives must be verified before they can sign — with authority source documentation attached. A compliance verification queue surfaces contacts awaiting verification. The public signing page captures will-and-preference confirmation for participants subject to supported decision-making.
+</Update>
+
+<Update label="12 April 2026" description="Plans">
+  **NDIS goal categories.** Goals are now classified into the eight NDIS Outcome Domains (Daily Living, Home, Health & Wellbeing, Lifelong Learning, Work, Social & Community, Relationships, Choice & Control). Goal categories feed into NDIA progress reports automatically.
+</Update>
+
+<Update label="5 April 2026" description="Activities">
+  **Activity enterprise controls.** New controls for organisations managing a team: self-approval can be disabled so coordinators cannot approve their own activities; a stale timer cron automatically pauses timers that have been running for more than a configurable threshold; approved activities lock financial fields to prevent post-approval edits; and a summary card shows ready-to-invoice totals before you create invoices.
+</Update>
+
+<Update label="10 March 2026" description="Platform">
+  **Caseload-scoped access.** Coordinators now only see participants assigned to them. Administrators and Owners see the full organisation caseload. Caseload assignment is set on the participant Overview tab.
+</Update>
+
+<Update label="9 March 2026" description="Participants">
+  **Participant profile — vertical sidebar navigation.** The participant profile has been redesigned with a vertical sidebar replacing horizontal tabs. Thirteen sections are accessible from the sidebar: Overview, Goals, Plans, Contacts, Consent, Providers, Activities, Documents, Intake, Service Agreements, Progress Reports, Representatives, Incidents, and COI.
+</Update>
+
+<Update label="8 March 2026" description="Activities">
+  **Activity chronology.** A new Chronology view on each participant profile shows all activities, incidents, plan changes, and key events in a single timeline. The chronology can be exported as a PDF — useful for NDIA planning meetings and progress report preparation.
+</Update>
+
+<Update label="8 March 2026" description="Platform">
+  **Per-organisation timezone.** CoordHub now stores and displays all dates and times in your organisation's configured timezone. Activity times, invoice dates, and compliance alerts all use your local time — no more UTC confusion for organisations outside NSW/VIC.
+</Update>
+
+<Update label="7 March 2026" description="Compliance">
+  **Leave management.** Staff leave requests, approvals, and balances are now managed in CoordHub. Leave types are configurable per organisation. Approved leave automatically populates timesheet days. Xero Payroll AU integration syncs leave balances bidirectionally.
+</Update>
+
+<Update label="3 March 2026" description="Finance">
+  **Funding administrator and plan manager directory.** Each plan budget can now have a funding administrator (for NDIA-managed budgets) or a plan manager (for plan-managed budgets) assigned directly on the budget row. A Plan Manager directory under Finance stores all plan managers your organisation works with, including their NDIS registration numbers.
+</Update>
+
+<Update label="2 March 2026" description="Finance">
+  **PRODA response tracking.** Import PRODA payment response files from the NDIA portal back into CoordHub. Paid claims advance automatically. Rejected claims are flagged with the NDIA rejection reason. A can-invoice gate prevents you from invoicing an activity that has an unresolved PRODA rejection.
+</Update>
+
+<Update label="2 March 2026" description="Activities">
+  **Travel billing and receipt uploads.** The activity form now has a dedicated travel section — enter kilometres, travel time, and any tolls or parking. CoordHub calculates the travel amount at the correct NDIS rate and generates a separate travel line item on the invoice. Travel receipts can be uploaded directly to the activity record.
+</Update>
+
+<Update label="1 March 2026" description="Platform">
+  **Help system.** A contextual help panel is accessible from the ? button in the header. 35 articles cover all major features with role-aware content — coordinators, managers, and admins see different articles based on their role.
+</Update>
+
+<Update label="27 February 2026" description="Compliance">
+  **External supervisor support.** Supervision records can now be created and signed by an external supervisor outside your organisation. External supervisors receive a scoped view of the staff member's supervision history — no access to participant data or other staff records.
+</Update>
+
+<Update label="17 February 2026" description="Finance">
+  **Finance module: invoicing, PRODA export, and Xero integration.** Create invoices from approved activities, export NDIS claims in the PRODA 16-column format for NDIA-managed participants, and sync invoices to Xero with GL account mapping configurable per organisation.
+</Update>
+
+<Update label="16 February 2026" description="Providers">
+  **Provider directory with Smart Match.** Maintain a directory of NDIS service providers with verification status (registered, insurance, WWCC). Smart Match finds providers for a participant based on their support category needs and location. Link providers to participants from their Providers tab.
+</Update>
+
+<Update label="14 February 2026" description="Participants">
+  **Intake assessment (28 sections).** A structured 28-section intake assessment captures clinical background, vulnerability factors, home safety, legal and financial arrangements, and referral source. Completion percentage is tracked automatically. Service agreement details pre-fill from the completed intake.
+</Update>
+
+<Update label="15 February 2026" description="Platform">
+  **Dashboard.** The dashboard shows four live KPI cards (Active Participants, Pending Activities, Expiring Items, Budget Health), a compliance alert bell, and a recent activity feed. Quick Actions gives one-click access to the most common tasks.
+</Update>
+
+<Update label="12 February 2026" description="Platform">
+  **CoordHub launched.** Support Coordination case management, NDIS billing, compliance registers, and participant records — built specifically for Australian NDIS Support Coordination providers.
 </Update>
